@@ -1,0 +1,379 @@
+Number,Owner,Address,Country,State,City,PrimeType,GarOrLot,RegCap,Occupancy,Hour,LANDUSETYP,Location 1,Latitude,Longitude,Tariff
+1,Port of SF,601 Terry A Francois Blvd,USA,California,San Francisco,Paid Parking,L,72,2,8, ,"(37.770135, -122.385801)",37.770135,-122.385801,2
+2,Port of SF,Pier 50,USA,California,San Francisco,Street Parking,L,45,28,8, ,"(37.773118, -122.382127)",37.773118,-122.382127,2
+3,Port of SF,601 Terry A Francois Blvd,USA,California,San Francisco,Paid Parking,L,72,56,8, ,"(37.770135, -122.385801)",37.770135,-122.385801,2
+4,Port of SF,Pier 50,USA,California,San Francisco,Street Parking,L,45,29,8, ,"(37.773118, -122.382127)",37.773118,-122.382127,2
+5,Port of SF,601 Terry A Francois Blvd,USA,California,San Francisco,Paid Parking,L,72,23,8, ,"(37.770135, -122.385801)",37.770135,-122.385801,2
+6,Port of SF,Pier 50,USA,California,San Francisco,Street Parking,L,45,38,8, ,"(37.773118, -122.382127)",37.773118,-122.382127,2
+7,Port of SF,601 Terry A Francois Blvd,USA,California,San Francisco,Paid Parking,L,72,40,8, ,"(37.770135, -122.385801)",37.770135,-122.385801,2
+8,Port of SF,Pier 50,USA,California,San Francisco,Street Parking,L,45,40,8, ,"(37.773118, -122.382127)",37.773118,-122.382127,2
+9,Port of SF,601 Terry A Francois Blvd,USA,California,San Francisco,Paid Parking,L,72,28,8, ,"(37.770135, -122.385801)",37.770135,-122.385801,2
+10,Port of SF,Pier 50,USA,California,San Francisco,Street Parking,L,45,41,8, ,"(37.773118, -122.382127)",37.773118,-122.382127,2
+11,Port of SF,601 Terry A Francois Blvd,USA,California,San Francisco,Paid Parking,L,72,70,8, ,"(37.770135, -122.385801)",37.770135,-122.385801,2
+12,Port of SF,Pier 50,USA,California,San Francisco,Street Parking,L,45,39,8, ,"(37.773118, -122.382127)",37.63,-122.382127,2
+13,Private,350 RHODE ISLAND ST,USA,California,San Francisco,Paid Parking,G,367,1,8, ,"(37.765354, -122.402692)",37.765354,-122.402692,2
+14,Private,650 KING ST,USA,California,San Francisco,Paid Parking,G,325,5,8, ,"(37.770589, -122.401611)",37.770589,-122.401611,2
+15,Private,635 08th St,USA,California,San Francisco,Paid Parking, ,472,3,8, ,"(37.770928, -122.404467)",37.770928,-122.404467,2
+16,Private,100 HENRY ADAMS ST,USA,California,San Francisco,Paid Parking,L,115,2,8, ,"(37.768401, -122.403931)",37.768401,-122.403931,2
+17,Private,40 RHODE ISLAND ST,USA,California,San Francisco,Paid Parking,L,70,1,8, ,"(37.769274, -122.40306)",37.769274,-122.40306,2
+18,Private,55 DIVISION ST,USA,California,San Francisco,Paid Parking,L,57,8,8, ,"(37.769548, -122.403298)",37.769548,-122.403298,2
+19,Private,450 10th St,USA,California,San Francisco,Paid Parking,G,500,12,8, ,"(37.770591, -122.411002)",37.770591,-122.411002,2
+20,Private,189 Hubbell St,USA,California,San Francisco,Paid Parking,L,500,7,8, ,"(37.76642, -122.397815)",37.76642,-122.397815,2
+21,Private,675 TOWNSEND ST,USA,California,San Francisco,Paid Parking,G,266,3,8, ,"(37.770388, -122.402847)",37.770388,-122.402847,2
+22,Private,1550 BRYANT ST,USA,California,San Francisco,Paid Parking,L,45,8,8, ,"(37.767874, -122.411236)",37.767874,-122.411236,2
+23,Private,650 TOWNSEND ST,USA,California,San Francisco,Paid Parking,G,526,4,8, ,"(37.771024, -122.402778)",37.771024,-122.402778,2
+24,Private,600 TOWNSEND ST,USA,California,San Francisco,Paid Parking,G,163,10,8, ,"(37.77174, -122.401872)",37.77174,-122.401872,2
+25,Private,200 KANSAS ST,USA,California,San Francisco,Paid Parking,L,49,1,8, ,"(37.767124, -122.403817)",37.767124,-122.403817,2
+26,Private,923 Brannan St,USA,California,San Francisco,Paid Parking,L,280,36,8, ,"(37.770754, -122.405492)",37.770754,-122.405492,2
+27,Private,910 Brannan St,USA,California,San Francisco,Paid Parking,L,115,15,8, ,"(37.771168, -122.405704)",37.771168,-122.405704,2
+28,Private,2020 Alameda St,USA,California,San Francisco,Paid Parking,L,100,13,8, ,"(37.768673, -122.404955)",37.768673,-122.404955,2
+29,Private,30 Division St,USA,California,San Francisco,Paid Parking,L,60,1,8, ,"(37.768805, -122.410083)",37.768805,-122.410083,2
+30,Private,501 08th St,USA,California,San Francisco,Paid Parking,L,62,10,8, ,"(37.772501, -122.40644)",37.772501,-122.40644,2
+31,Private,1670 Owens St,USA,California,San Francisco,Paid Parking,G,500,23,8, ,"(37.76755, -122.394847)",37.76755,-122.394847,2
+32,Private,409 Illinois St,USA,California,San Francisco,Paid Parking,G,400,34,8, ,"(37.766705, -122.387222)",37.766705,-122.387222,2
+33,Private,444 DEHARO ST,USA,California,San Francisco,Permit Holder,G,67,4,8, ,"(37.764189, -122.401613)",37.764189,-122.401613,2
+34,Private,66 Potrero St,USA,California,San Francisco,Permit Holder,L,137,45,8, ,"(37.76863, -122.407905)",37.76863,-122.407905,2
+35,Private,100 Potrero Ave,USA,California,San Francisco,Permit Holder,L,100,34,8, ,"(37.767745, -122.40888)",37.767745,-122.40888,2
+36,Private,321 Florida St,USA,California,San Francisco,Permit Holder,L,60,18,8, ,"(37.764936, -122.410946)",37.764936,-122.410946,2
+37,Private,1002 Bryant St,USA,California,San Francisco,Permit Holder,L,14,12,8, ,"(37.772554, -122.40705)",37.772554,-122.40705,2
+38,Private,235 Kansas St,USA,California,San Francisco,Permit Holder,L,76,24,8, ,"(37.766793, -122.403267)",37.766793,-122.403267,2
+39,Private,590 15th St,USA,California,San Francisco,Permit Holder,L,14,4,8, ,"(37.767309, -122.406346)",37.767309,-122.406346,2
+40,Private,828 Brannan St,USA,California,San Francisco,Permit Holder,L,64,12,8, ,"(37.772573, -122.403927)",37.772573,-122.403927,2
+41,Private,2157 17th St,USA,California,San Francisco,Permit Holder,L,63,7,8, ,"(37.765023, -122.405759)",37.765023,-122.405759,2
+42,Private,Terry Francois Blvd,USA,California,San Francisco,Permit Holder,L,40,3,8, ,"(37.772948, -122.386775)",37.772948,-122.386775,2
+43,Private,1300 Bryant St,USA,California,San Francisco,Permit Holder,L,43,7,8, ,"(37.768646, -122.411169)",37.768646,-122.411169,2
+44,Private,2431 Alameda St,USA,California,San Francisco,Street Parking,L,120,99,8, ,"(37.767757, -122.409248)",37.767757,-122.409248,2
+45,Private,1504 Bryant St,USA,California,San Francisco,Customer Parking,L,41,8,8,retail,"(37.768139, -122.410956)",37.768139,-122.410956,2
+46,Private,364 09th St,USA,California,San Francisco,Customer Parking,L,40,6,8,hotel,"(37.772783, -122.410626)",37.772783,-122.410626,2
+47,Private,220 San Bruno St,USA,California,San Francisco,Customer Parking,L,70,12,8,retail,"(37.766215, -122.406036)",37.766215,-122.406036,2
+48,Private,2208 Alameda St,USA,California,San Francisco,Customer Parking,L,70,4,8,retail,"(37.768562, -122.406796)",37.768562,-122.406796,2
+49,Private,430 Irwin St,USA,California,San Francisco,Customer Parking,L,15,7,8,retail,"(37.767928, -122.398186)",37.767928,-122.398186,2
+50,Private,902 07th St,USA,California,San Francisco,Customer Parking,L,24,9,8,retail,"(37.770231, -122.399903)",37.770231,-122.399903,2
+51,Private,204 Division St,USA,California,San Francisco,Customer Parking,L,150,15,8,entertainment,"(37.769499, -122.406342)",37.769499,-122.406342,2
+52,Private,180 Pennsylvania St,USA,California,San Francisco,Customer Parking,L,60,9,8,retail,"(37.764324, -122.393832)",37.764324,-122.393832,2
+53,Private,101 Utah St,USA,California,San Francisco,Customer Parking,L,150,20,8,retail,"(37.768255, -122.406338)",37.768255,-122.406338,2
+54,Private,2103 16th St,USA,California,San Francisco,Customer Parking,L,16,6,8,restaurant,"(37.765531, -122.407626)",37.765531,-122.407626,2
+55,Private,975 BRYANT ST,USA,California,San Francisco,Customer Parking,L,50,7,8,retail,"(37.772926, -122.405845)",37.772926,-122.405845,2
+56,Private,2264 16th St,USA,California,San Francisco,Customer Parking,G,800,26,8,retail,"(37.765947, -122.409035)",37.765947,-122.409035,2
+57,Private,855 Terry A Francois Blvd,USA,California,San Francisco,Customer Parking,L,40,4,8,restaurant,"(37.764853, -122.386755)",37.764853,-122.386755,2
+58,Private,840 Brannan St,USA,California,San Francisco,Customer Parking,L,110,17,8,retail,"(37.772401, -122.404145)",37.772401,-122.404145,2
+59,Private,685 07th St,USA,California,San Francisco,Customer Parking,L,37,10,8,retail,"(37.772179, -122.401615)",37.772179,-122.401615,2
+60,Private,300 Deharo St,USA,California,San Francisco,Customer Parking,L,15,4,8,restaurant,"(37.76594, -122.401777)",37.76594,-122.401777,2
+61,Private,1590 Bryant St,USA,California,San Francisco,Customer Parking,L,32,6,8,retail,"(37.767192, -122.410769)",37.767192,-122.410769,2
+62,Private,555 09th St,USA,California,San Francisco,Customer Parking,G,378,23,8,grocery,"(37.770716, -122.407328)",37.770716,-122.407328,2
+63,Private,438 08th St,USA,California,San Francisco,Customer Parking,G,30,12,8,retail,"(37.773099, -122.407924)",37.773099,-122.407924,2
+64,Private,385 09th St,USA,California,San Francisco,Customer Parking,G,16,4,10,hotel,"(37.772847, -122.409978)",37.772847,-122.409978,2
+65,Private,2480 16th St,USA,California,San Francisco,Customer Parking,L,12,7,10,restaurant,"(37.765714, -122.410964)",37.765714,-122.410964,2
+66,Private,2428 16th St,USA,California,San Francisco,Customer Parking,L,18,3,10,restaurant,"(37.765365, -122.410673)",37.765365,-122.410673,2
+67,Private,2446 17th St,USA,California,San Francisco,Free Parking,L,40,17,10, ,"(37.765017, -122.407807)",37.765017,-122.407807,2
+68,Private,375 Berry St,USA,California,San Francisco,Paid Parking,L,210,27,10, ,"(37.772971, -122.397162)",37.772971,-122.397162,2
+69,Private,350 RHODE ISLAND ST,USA,California,San Francisco,Paid Parking,G,367,180,10, ,"(37.765354, -122.402692)",37.765354,-122.402692,2
+70,Private,650 KING ST,USA,California,San Francisco,Paid Parking,G,325,121,10, ,"(37.770589, -122.401611)",37.770589,-122.401611,2
+71,Private,635 08th St,USA,California,San Francisco,Paid Parking, ,472,300,10, ,"(37.770928, -122.404467)",37.770928,-122.404467,2
+72,Private,100 HENRY ADAMS ST,USA,California,San Francisco,Paid Parking,L,115,90,10, ,"(37.768401, -122.403931)",37.768401,-122.403931,2
+73,Private,40 RHODE ISLAND ST,USA,California,San Francisco,Paid Parking,L,70,40,10, ,"(37.769274, -122.40306)",37.769274,-122.40306,2
+74,Private,55 DIVISION ST,USA,California,San Francisco,Paid Parking,L,57,21,10, ,"(37.769548, -122.403298)",37.769548,-122.403298,2
+75,Private,450 10th St,USA,California,San Francisco,Paid Parking,G,500,120,10, ,"(37.770591, -122.411002)",37.770591,-122.411002,2
+76,Private,189 Hubbell St,USA,California,San Francisco,Paid Parking,L,500,90,10, ,"(37.76642, -122.397815)",37.76642,-122.397815,2
+77,Private,675 TOWNSEND ST,USA,California,San Francisco,Paid Parking,G,266,87,10, ,"(37.770388, -122.402847)",37.770388,-122.402847,2
+78,Private,1550 BRYANT ST,USA,California,San Francisco,Paid Parking,L,45,30,10, ,"(37.767874, -122.411236)",37.767874,-122.411236,2
+79,Private,650 TOWNSEND ST,USA,California,San Francisco,Paid Parking,G,526,28,10, ,"(37.771024, -122.402778)",37.771024,-122.402778,2
+80,Private,600 TOWNSEND ST,USA,California,San Francisco,Paid Parking,G,163,18,10, ,"(37.77174, -122.401872)",37.77174,-122.401872,2
+81,Private,200 KANSAS ST,USA,California,San Francisco,Paid Parking,L,49,13,10, ,"(37.767124, -122.403817)",37.767124,-122.403817,2
+82,Private,923 Brannan St,USA,California,San Francisco,Paid Parking,L,280,110,10, ,"(37.770754, -122.405492)",37.770754,-122.405492,2
+83,Private,910 Brannan St,USA,California,San Francisco,Paid Parking,L,115,29,10, ,"(37.771168, -122.405704)",37.771168,-122.405704,2
+84,Private,2020 Alameda St,USA,California,San Francisco,Paid Parking,L,100,10,10, ,"(37.768673, -122.404955)",37.768673,-122.404955,2
+85,Private,30 Division St,USA,California,San Francisco,Paid Parking,L,60,11,10, ,"(37.768805, -122.410083)",37.768805,-122.410083,2
+86,Private,501 08th St,USA,California,San Francisco,Paid Parking,L,62,21,10, ,"(37.772501, -122.40644)",37.772501,-122.40644,2
+87,Private,1670 Owens St,USA,California,San Francisco,Paid Parking,G,500,125,10, ,"(37.76755, -122.394847)",37.76755,-122.394847,2
+88,Private,409 Illinois St,USA,California,San Francisco,Paid Parking,G,400,120,10, ,"(37.766705, -122.387222)",37.766705,-122.387222,2
+89,Private,444 DEHARO ST,USA,California,San Francisco,Permit Holder,G,67,30,10, ,"(37.764189, -122.401613)",37.764189,-122.401613,2
+90,Private,66 Potrero St,USA,California,San Francisco,Permit Holder,L,137,47,10, ,"(37.76863, -122.407905)",37.76863,-122.407905,2
+91,Private,100 Potrero Ave,USA,California,San Francisco,Permit Holder,L,100,50,10, ,"(37.767745, -122.40888)",37.767745,-122.40888,2
+92,Private,321 Florida St,USA,California,San Francisco,Permit Holder,L,60,31,10, ,"(37.764936, -122.410946)",37.764936,-122.410946,2
+93,Private,1002 Bryant St,USA,California,San Francisco,Permit Holder,L,14,7,10, ,"(37.772554, -122.40705)",37.772554,-122.40705,2
+94,Private,235 Kansas St,USA,California,San Francisco,Permit Holder,L,76,34,10, ,"(37.766793, -122.403267)",37.766793,-122.403267,2
+95,Private,590 15th St,USA,California,San Francisco,Permit Holder,L,14,10,10, ,"(37.767309, -122.406346)",37.767309,-122.406346,2
+96,Private,828 Brannan St,USA,California,San Francisco,Permit Holder,L,64,32,10, ,"(37.772573, -122.403927)",37.772573,-122.403927,2
+97,Private,2157 17th St,USA,California,San Francisco,Permit Holder,L,63,50,10, ,"(37.765023, -122.405759)",37.765023,-122.405759,2
+98,Private,Terry Francois Blvd,USA,California,San Francisco,Permit Holder,L,40,25,10, ,"(37.772948, -122.386775)",37.772948,-122.386775,2
+99,Private,1300 Bryant St,USA,California,San Francisco,Permit Holder,L,43,31,10, ,"(37.768646, -122.411169)",37.768646,-122.411169,2
+100,Private,2431 Alameda St,USA,California,San Francisco,Street Parking,L,120,98,10, ,"(37.767757, -122.409248)",37.767757,-122.409248,2
+101,Private,1504 Bryant St,USA,California,San Francisco,Customer Parking,L,41,23,10,retail,"(37.768139, -122.410956)",37.768139,-122.410956,2
+102,Private,364 09th St,USA,California,San Francisco,Customer Parking,L,40,34,10,hotel,"(37.772783, -122.410626)",37.772783,-122.410626,2
+103,Private,220 San Bruno St,USA,California,San Francisco,Customer Parking,L,70,43,10,retail,"(37.766215, -122.406036)",37.766215,-122.406036,2
+104,Private,2208 Alameda St,USA,California,San Francisco,Customer Parking,L,70,34,10,retail,"(37.768562, -122.406796)",37.768562,-122.406796,2
+105,Private,430 Irwin St,USA,California,San Francisco,Customer Parking,L,15,12,10,retail,"(37.767928, -122.398186)",37.767928,-122.398186,2
+106,Private,902 07th St,USA,California,San Francisco,Customer Parking,L,24,12,10,retail,"(37.770231, -122.399903)",37.770231,-122.399903,2
+107,Private,204 Division St,USA,California,San Francisco,Customer Parking,L,150,56,10,entertainment,"(37.769499, -122.406342)",37.769499,-122.406342,2
+108,Private,180 Pennsylvania St,USA,California,San Francisco,Customer Parking,L,60,32,10,retail,"(37.764324, -122.393832)",37.764324,-122.393832,2
+109,Private,101 Utah St,USA,California,San Francisco,Customer Parking,L,150,65,10,retail,"(37.768255, -122.406338)",37.768255,-122.406338,2
+110,Private,2103 16th St,USA,California,San Francisco,Customer Parking,L,16,12,10,restaurant,"(37.765531, -122.407626)",37.765531,-122.407626,2
+111,Private,975 BRYANT ST,USA,California,San Francisco,Customer Parking,L,50,34,10,retail,"(37.772926, -122.405845)",37.772926,-122.405845,2
+112,Private,2264 16th St,USA,California,San Francisco,Customer Parking,G,800,221,10,retail,"(37.765947, -122.409035)",37.765947,-122.409035,2
+113,Private,855 Terry A Francois Blvd,USA,California,San Francisco,Customer Parking,L,40,21,10,restaurant,"(37.764853, -122.386755)",37.764853,-122.386755,2
+114,Private,840 Brannan St,USA,California,San Francisco,Customer Parking,L,110,43,10,retail,"(37.772401, -122.404145)",37.772401,-122.404145,2
+115,Private,685 07th St,USA,California,San Francisco,Customer Parking,L,37,29,10,retail,"(37.772179, -122.401615)",37.772179,-122.401615,2
+116,Private,300 Deharo St,USA,California,San Francisco,Customer Parking,L,15,11,10,restaurant,"(37.76594, -122.401777)",37.76594,-122.401777,2
+117,Private,1590 Bryant St,USA,California,San Francisco,Customer Parking,L,32,23,10,retail,"(37.767192, -122.410769)",37.767192,-122.410769,2
+118,Private,555 09th St,USA,California,San Francisco,Customer Parking,G,378,124,10,grocery,"(37.770716, -122.407328)",37.770716,-122.407328,2
+119,Private,438 08th St,USA,California,San Francisco,Customer Parking,G,30,21,10,retail,"(37.773099, -122.407924)",37.773099,-122.407924,2
+120,Private,385 09th St,USA,California,San Francisco,Customer Parking,G,16,14,10,hotel,"(37.772847, -122.409978)",37.772847,-122.409978,2
+121,Private,2480 16th St,USA,California,San Francisco,Customer Parking,L,12,11,10,restaurant,"(37.765714, -122.410964)",37.765714,-122.410964,2
+122,Private,2428 16th St,USA,California,San Francisco,Customer Parking,L,18,16,10,restaurant,"(37.765365, -122.410673)",37.765365,-122.410673,2
+123,Private,2446 17th St,USA,California,San Francisco,Free Parking,L,40,35,10, ,"(37.765017, -122.407807)",37.765017,-122.407807,2
+124,Private,375 Berry St,USA,California,San Francisco,Paid Parking,L,210,67,10, ,"(37.772971, -122.397162)",37.772971,-122.397162,2
+125,Private,350 RHODE ISLAND ST,USA,California,San Francisco,Paid Parking,G,367,100,10, ,"(37.765354, -122.402692)",37.765354,-122.402692,2
+126,Private,650 KING ST,USA,California,San Francisco,Paid Parking,G,325,80,10, ,"(37.770589, -122.401611)",37.770589,-122.401611,2
+127,Private,635 08th St,USA,California,San Francisco,Paid Parking, ,472,97,12, ,"(37.770928, -122.404467)",37.770928,-122.404467,2
+128,Private,100 HENRY ADAMS ST,USA,California,San Francisco,Paid Parking,L,115,72,12, ,"(37.768401, -122.403931)",37.768401,-122.403931,2
+129,Private,40 RHODE ISLAND ST,USA,California,San Francisco,Paid Parking,L,70,30,12, ,"(37.769274, -122.40306)",37.769274,-122.40306,2
+130,Private,55 DIVISION ST,USA,California,San Francisco,Paid Parking,L,57,12,12, ,"(37.769548, -122.403298)",37.769548,-122.403298,2
+131,Private,450 10th St,USA,California,San Francisco,Paid Parking,G,500,110,12, ,"(37.770591, -122.411002)",37.770591,-122.411002,2
+132,Private,189 Hubbell St,USA,California,San Francisco,Paid Parking,L,500,270,12, ,"(37.76642, -122.397815)",37.76642,-122.397815,2
+133,Private,675 TOWNSEND ST,USA,California,San Francisco,Paid Parking,G,266,48,12, ,"(37.770388, -122.402847)",37.770388,-122.402847,2
+134,Private,1550 BRYANT ST,USA,California,San Francisco,Paid Parking,L,45,11,12, ,"(37.767874, -122.411236)",37.767874,-122.411236,2
+135,Private,650 TOWNSEND ST,USA,California,San Francisco,Paid Parking,G,526,89,12, ,"(37.771024, -122.402778)",37.771024,-122.402778,2
+136,Private,600 TOWNSEND ST,USA,California,San Francisco,Paid Parking,G,163,80,12, ,"(37.77174, -122.401872)",37.77174,-122.401872,2
+137,Private,200 KANSAS ST,USA,California,San Francisco,Paid Parking,L,49,40,12, ,"(37.767124, -122.403817)",37.767124,-122.403817,2
+138,Private,923 Brannan St,USA,California,San Francisco,Paid Parking,L,280,121,12, ,"(37.770754, -122.405492)",37.770754,-122.405492,2
+139,Private,910 Brannan St,USA,California,San Francisco,Paid Parking,L,115,70,12, ,"(37.771168, -122.405704)",37.771168,-122.405704,2
+140,Private,2020 Alameda St,USA,California,San Francisco,Paid Parking,L,100,34,12, ,"(37.768673, -122.404955)",37.768673,-122.404955,2
+141,Private,30 Division St,USA,California,San Francisco,Paid Parking,L,60,17,12, ,"(37.768805, -122.410083)",37.768805,-122.410083,2
+142,Private,501 08th St,USA,California,San Francisco,Paid Parking,L,62,59,12, ,"(37.772501, -122.40644)",37.772501,-122.40644,2
+143,Private,1670 Owens St,USA,California,San Francisco,Paid Parking,G,500,123,12, ,"(37.76755, -122.394847)",37.76755,-122.394847,2
+144,Private,409 Illinois St,USA,California,San Francisco,Paid Parking,G,400,211,12, ,"(37.766705, -122.387222)",37.766705,-122.387222,2
+145,Private,444 DEHARO ST,USA,California,San Francisco,Permit Holder,G,67,60,12, ,"(37.764189, -122.401613)",37.764189,-122.401613,2
+146,Private,66 Potrero St,USA,California,San Francisco,Permit Holder,L,137,78,12, ,"(37.76863, -122.407905)",37.76863,-122.407905,2
+147,Private,100 Potrero Ave,USA,California,San Francisco,Permit Holder,L,100,95,12, ,"(37.767745, -122.40888)",37.767745,-122.40888,2
+148,Private,321 Florida St,USA,California,San Francisco,Permit Holder,L,60,44,12, ,"(37.764936, -122.410946)",37.764936,-122.410946,2
+149,Private,1002 Bryant St,USA,California,San Francisco,Permit Holder,L,14,10,12, ,"(37.772554, -122.40705)",37.772554,-122.40705,2
+150,Private,235 Kansas St,USA,California,San Francisco,Permit Holder,L,76,38,12, ,"(37.766793, -122.403267)",37.766793,-122.403267,2
+151,Private,590 15th St,USA,California,San Francisco,Permit Holder,L,14,13,12, ,"(37.767309, -122.406346)",37.767309,-122.406346,2
+152,Private,828 Brannan St,USA,California,San Francisco,Permit Holder,L,64,34,12, ,"(37.772573, -122.403927)",37.772573,-122.403927,2
+153,Private,2157 17th St,USA,California,San Francisco,Permit Holder,L,63,37,12, ,"(37.765023, -122.405759)",37.765023,-122.405759,2
+154,Private,Terry Francois Blvd,USA,California,San Francisco,Permit Holder,L,40,38,12, ,"(37.772948, -122.386775)",37.772948,-122.386775,2
+155,Private,1300 Bryant St,USA,California,San Francisco,Permit Holder,L,43,41,12, ,"(37.768646, -122.411169)",37.768646,-122.411169,2
+156,Private,2431 Alameda St,USA,California,San Francisco,Street Parking,L,120,117,12, ,"(37.767757, -122.409248)",37.767757,-122.409248,2
+157,Private,1504 Bryant St,USA,California,San Francisco,Customer Parking,L,41,29,12,retail,"(37.768139, -122.410956)",37.768139,-122.410956,2
+158,Private,364 09th St,USA,California,San Francisco,Customer Parking,L,40,38,12,hotel,"(37.772783, -122.410626)",37.772783,-122.410626,2
+159,Private,220 San Bruno St,USA,California,San Francisco,Customer Parking,L,70,65,12,retail,"(37.766215, -122.406036)",37.766215,-122.406036,2
+160,Private,2208 Alameda St,USA,California,San Francisco,Customer Parking,L,70,34,12,retail,"(37.768562, -122.406796)",37.768562,-122.406796,2
+161,Private,430 Irwin St,USA,California,San Francisco,Customer Parking,L,15,4,12,retail,"(37.767928, -122.398186)",37.767928,-122.398186,2
+162,Private,902 07th St,USA,California,San Francisco,Customer Parking,L,24,12,12,retail,"(37.770231, -122.399903)",37.770231,-122.399903,2
+163,Private,204 Division St,USA,California,San Francisco,Customer Parking,L,150,78,12,entertainment,"(37.769499, -122.406342)",37.769499,-122.406342,2
+164,Private,180 Pennsylvania St,USA,California,San Francisco,Customer Parking,L,60,27,12,retail,"(37.764324, -122.393832)",37.764324,-122.393832,2
+165,Private,101 Utah St,USA,California,San Francisco,Customer Parking,L,150,93,12,retail,"(37.768255, -122.406338)",37.768255,-122.406338,2
+166,Private,2103 16th St,USA,California,San Francisco,Customer Parking,L,16,15,12,restaurant,"(37.765531, -122.407626)",37.765531,-122.407626,2
+167,Private,975 BRYANT ST,USA,California,San Francisco,Customer Parking,L,50,31,12,retail,"(37.772926, -122.405845)",37.772926,-122.405845,2
+168,Private,2264 16th St,USA,California,San Francisco,Customer Parking,G,800,454,12,retail,"(37.765947, -122.409035)",37.765947,-122.409035,2
+169,Private,855 Terry A Francois Blvd,USA,California,San Francisco,Customer Parking,L,40,32,12,restaurant,"(37.764853, -122.386755)",37.764853,-122.386755,2
+170,Private,840 Brannan St,USA,California,San Francisco,Customer Parking,L,110,34,12,retail,"(37.772401, -122.404145)",37.772401,-122.404145,2
+171,Private,685 07th St,USA,California,San Francisco,Customer Parking,L,37,35,12,retail,"(37.772179, -122.401615)",37.772179,-122.401615,2
+172,Private,300 Deharo St,USA,California,San Francisco,Customer Parking,L,15,14,12,restaurant,"(37.76594, -122.401777)",37.76594,-122.401777,2
+173,Private,1590 Bryant St,USA,California,San Francisco,Customer Parking,L,32,28,12,retail,"(37.767192, -122.410769)",37.767192,-122.410769,2
+174,Private,555 09th St,USA,California,San Francisco,Customer Parking,G,378,242,12,grocery,"(37.770716, -122.407328)",37.770716,-122.407328,2
+175,Private,438 08th St,USA,California,San Francisco,Customer Parking,G,30,24,12,retail,"(37.773099, -122.407924)",37.773099,-122.407924,2
+176,Private,385 09th St,USA,California,San Francisco,Customer Parking,G,16,15,12,hotel,"(37.772847, -122.409978)",37.772847,-122.409978,2
+177,Private,2480 16th St,USA,California,San Francisco,Customer Parking,L,12,11,12,restaurant,"(37.765714, -122.410964)",37.765714,-122.410964,2
+178,Private,2428 16th St,USA,California,San Francisco,Customer Parking,L,18,17,12,restaurant,"(37.765365, -122.410673)",37.765365,-122.410673,2
+179,Private,2446 17th St,USA,California,San Francisco,Free Parking,L,240,131,12, ,"(37.765017, -122.407807)",37.765017,-122.407807,2
+180,Private,375 Berry St,USA,California,San Francisco,Paid Parking,L,210,90,12, ,"(37.772971, -122.397162)",37.772971,-122.397162,2
+181,Private,350 RHODE ISLAND ST,USA,California,San Francisco,Paid Parking,G,367,168,12, ,"(37.765354, -122.402692)",37.765354,-122.402692,2
+182,Private,650 KING ST,USA,California,San Francisco,Paid Parking,G,325,135,12, ,"(37.770589, -122.401611)",37.770589,-122.401611,2
+183,Private,635 08th St,USA,California,San Francisco,Paid Parking, ,472,145,12, ,"(37.770928, -122.404467)",37.770928,-122.404467,2
+184,Private,100 HENRY ADAMS ST,USA,California,San Francisco,Paid Parking,L,115,74,12, ,"(37.768401, -122.403931)",37.768401,-122.403931,2
+185,Private,40 RHODE ISLAND ST,USA,California,San Francisco,Paid Parking,L,70,41,12, ,"(37.769274, -122.40306)",37.769274,-122.40306,2
+186,Private,55 DIVISION ST,USA,California,San Francisco,Paid Parking,L,57,42,12, ,"(37.769548, -122.403298)",37.769548,-122.403298,2
+187,Private,450 10th St,USA,California,San Francisco,Paid Parking,G,500,265,12, ,"(37.770591, -122.411002)",37.770591,-122.411002,2
+188,Private,189 Hubbell St,USA,California,San Francisco,Paid Parking,L,500,165,12, ,"(37.76642, -122.397815)",37.76642,-122.397815,2
+189,Private,675 TOWNSEND ST,USA,California,San Francisco,Paid Parking,G,266,94,12, ,"(37.770388, -122.402847)",37.770388,-122.402847,2
+190,Private,1550 BRYANT ST,USA,California,San Francisco,Paid Parking,L,45,23,14, ,"(37.767874, -122.411236)",37.767874,-122.411236,2
+191,Private,650 TOWNSEND ST,USA,California,San Francisco,Paid Parking,G,526,384,14, ,"(37.771024, -122.402778)",37.771024,-122.402778,2
+192,Private,600 TOWNSEND ST,USA,California,San Francisco,Paid Parking,G,163,89,14, ,"(37.77174, -122.401872)",37.77174,-122.401872,2
+193,Private,200 KANSAS ST,USA,California,San Francisco,Paid Parking,L,49,16,14, ,"(37.767124, -122.403817)",37.767124,-122.403817,2
+194,Private,923 Brannan St,USA,California,San Francisco,Paid Parking,L,280,104,14, ,"(37.770754, -122.405492)",37.770754,-122.405492,2
+195,Private,910 Brannan St,USA,California,San Francisco,Paid Parking,L,115,44,14, ,"(37.771168, -122.405704)",37.771168,-122.405704,2
+196,Private,2020 Alameda St,USA,California,San Francisco,Paid Parking,L,100,73,14, ,"(37.768673, -122.404955)",37.768673,-122.404955,2
+197,Private,30 Division St,USA,California,San Francisco,Paid Parking,L,60,12,14, ,"(37.768805, -122.410083)",37.768805,-122.410083,2
+198,Private,501 08th St,USA,California,San Francisco,Paid Parking,L,62,30,14, ,"(37.772501, -122.40644)",37.772501,-122.40644,2
+199,Private,1670 Owens St,USA,California,San Francisco,Paid Parking,G,500,265,14, ,"(37.76755, -122.394847)",37.76755,-122.394847,2
+200,Private,409 Illinois St,USA,California,San Francisco,Paid Parking,G,400,100,14, ,"(37.766705, -122.387222)",37.766705,-122.387222,2
+201,Private,444 DEHARO ST,USA,California,San Francisco,Permit Holder,G,67,32,14, ,"(37.764189, -122.401613)",37.764189,-122.401613,2
+202,Private,66 Potrero St,USA,California,San Francisco,Permit Holder,L,137,110,14, ,"(37.76863, -122.407905)",37.76863,-122.407905,2
+203,Private,100 Potrero Ave,USA,California,San Francisco,Permit Holder,L,100,88,14, ,"(37.767745, -122.40888)",37.767745,-122.40888,2
+204,Private,321 Florida St,USA,California,San Francisco,Permit Holder,L,60,30,14, ,"(37.764936, -122.410946)",37.764936,-122.410946,2
+205,Private,1002 Bryant St,USA,California,San Francisco,Permit Holder,L,14,3,14, ,"(37.772554, -122.40705)",37.772554,-122.40705,2
+206,Private,235 Kansas St,USA,California,San Francisco,Permit Holder,L,76,34,14, ,"(37.766793, -122.403267)",37.766793,-122.403267,2
+207,Private,590 15th St,USA,California,San Francisco,Permit Holder,L,14,4,14, ,"(37.767309, -122.406346)",37.767309,-122.406346,2
+208,Private,828 Brannan St,USA,California,San Francisco,Permit Holder,L,64,33,14, ,"(37.772573, -122.403927)",37.772573,-122.403927,2
+209,Private,2157 17th St,USA,California,San Francisco,Permit Holder,L,63,56,14, ,"(37.765023, -122.405759)",37.765023,-122.405759,2
+210,Private,Terry Francois Blvd,USA,California,San Francisco,Permit Holder,L,40,14,14, ,"(37.772948, -122.386775)",37.772948,-122.386775,2
+211,Private,1300 Bryant St,USA,California,San Francisco,Permit Holder,L,43,13,14, ,"(37.768646, -122.411169)",37.768646,-122.411169,2
+212,Private,2431 Alameda St,USA,California,San Francisco,Street Parking,L,120,115,14, ,"(37.767757, -122.409248)",37.767757,-122.409248,2
+213,Private,1504 Bryant St,USA,California,San Francisco,Customer Parking,L,41,30,14,retail,"(37.768139, -122.410956)",37.768139,-122.410956,2
+214,Private,364 09th St,USA,California,San Francisco,Customer Parking,L,40,29,14,hotel,"(37.772783, -122.410626)",37.772783,-122.410626,2
+215,Private,220 San Bruno St,USA,California,San Francisco,Customer Parking,L,70,65,14,retail,"(37.766215, -122.406036)",37.766215,-122.406036,2
+216,Private,2208 Alameda St,USA,California,San Francisco,Customer Parking,L,70,34,14,retail,"(37.768562, -122.406796)",37.768562,-122.406796,2
+217,Private,430 Irwin St,USA,California,San Francisco,Customer Parking,L,15,4,14,retail,"(37.767928, -122.398186)",37.767928,-122.398186,2
+218,Private,902 07th St,USA,California,San Francisco,Customer Parking,L,24,13,14,retail,"(37.770231, -122.399903)",37.770231,-122.399903,2
+219,Private,204 Division St,USA,California,San Francisco,Customer Parking,L,150,110,14,entertainment,"(37.769499, -122.406342)",37.769499,-122.406342,2
+220,Private,180 Pennsylvania St,USA,California,San Francisco,Customer Parking,L,60,44,14,retail,"(37.764324, -122.393832)",37.764324,-122.393832,2
+221,Private,101 Utah St,USA,California,San Francisco,Customer Parking,L,150,123,14,retail,"(37.768255, -122.406338)",37.768255,-122.406338,2
+222,Private,2103 16th St,USA,California,San Francisco,Customer Parking,L,16,12,14,restaurant,"(37.765531, -122.407626)",37.765531,-122.407626,2
+223,Private,975 BRYANT ST,USA,California,San Francisco,Customer Parking,L,50,23,14,retail,"(37.772926, -122.405845)",37.772926,-122.405845,2
+224,Private,2264 16th St,USA,California,San Francisco,Customer Parking,G,800,584,14,retail,"(37.765947, -122.409035)",37.765947,-122.409035,2
+225,Private,855 Terry A Francois Blvd,USA,California,San Francisco,Customer Parking,L,40,32,14,restaurant,"(37.764853, -122.386755)",37.764853,-122.386755,2
+226,Private,840 Brannan St,USA,California,San Francisco,Customer Parking,L,110,90,14,retail,"(37.772401, -122.404145)",37.772401,-122.404145,2
+227,Private,685 07th St,USA,California,San Francisco,Customer Parking,L,37,32,14,retail,"(37.772179, -122.401615)",37.772179,-122.401615,2
+228,Private,300 Deharo St,USA,California,San Francisco,Customer Parking,L,15,7,14,restaurant,"(37.76594, -122.401777)",37.76594,-122.401777,2
+229,Private,1590 Bryant St,USA,California,San Francisco,Customer Parking,L,32,14,14,retail,"(37.767192, -122.410769)",37.767192,-122.410769,2
+230,Private,555 09th St,USA,California,San Francisco,Customer Parking,G,378,187,14,grocery,"(37.770716, -122.407328)",37.770716,-122.407328,2
+231,Private,438 08th St,USA,California,San Francisco,Customer Parking,G,30,22,14,retail,"(37.773099, -122.407924)",37.773099,-122.407924,2
+232,Private,385 09th St,USA,California,San Francisco,Customer Parking,G,16,12,14,hotel,"(37.772847, -122.409978)",37.772847,-122.409978,2
+233,Private,2480 16th St,USA,California,San Francisco,Customer Parking,L,12,9,14,restaurant,"(37.765714, -122.410964)",37.765714,-122.410964,2
+234,Private,2428 16th St,USA,California,San Francisco,Customer Parking,L,18,13,14,restaurant,"(37.765365, -122.410673)",37.765365,-122.410673,2
+235,Private,2446 17th St,USA,California,San Francisco,Free Parking,L,40,38,14, ,"(37.765017, -122.407807)",37.765017,-122.407807,2
+236,Private,375 Berry St,USA,California,San Francisco,Paid Parking,L,210,100,14, ,"(37.772971, -122.397162)",37.772971,-122.397162,2
+237,Private,350 RHODE ISLAND ST,USA,California,San Francisco,Paid Parking,G,367,121,14, ,"(37.765354, -122.402692)",37.765354,-122.402692,2
+238,Private,650 KING ST,USA,California,San Francisco,Paid Parking,G,325,146,14, ,"(37.770589, -122.401611)",37.770589,-122.401611,2
+239,Private,635 08th St,USA,California,San Francisco,Paid Parking, ,472,189,14, ,"(37.770928, -122.404467)",37.770928,-122.404467,2
+240,Private,100 HENRY ADAMS ST,USA,California,San Francisco,Paid Parking,L,115,94,14, ,"(37.768401, -122.403931)",37.768401,-122.403931,2
+241,Private,40 RHODE ISLAND ST,USA,California,San Francisco,Paid Parking,L,70,56,14, ,"(37.769274, -122.40306)",37.769274,-122.40306,2
+242,Private,55 DIVISION ST,USA,California,San Francisco,Paid Parking,L,57,52,14, ,"(37.769548, -122.403298)",37.769548,-122.403298,2
+243,Private,450 10th St,USA,California,San Francisco,Paid Parking,G,500,225,14, ,"(37.770591, -122.411002)",37.770591,-122.411002,2
+244,Private,189 Hubbell St,USA,California,San Francisco,Paid Parking,L,500,180,14, ,"(37.76642, -122.397815)",37.76642,-122.397815,2
+245,Private,675 TOWNSEND ST,USA,California,San Francisco,Paid Parking,G,266,70,14, ,"(37.770388, -122.402847)",37.770388,-122.402847,2
+246,Private,1550 BRYANT ST,USA,California,San Francisco,Paid Parking,L,45,12,14, ,"(37.767874, -122.411236)",37.767874,-122.411236,2
+247,Private,650 TOWNSEND ST,USA,California,San Francisco,Paid Parking,G,526,184,14, ,"(37.771024, -122.402778)",37.771024,-122.402778,2
+248,Private,600 TOWNSEND ST,USA,California,San Francisco,Paid Parking,G,163,98,14, ,"(37.77174, -122.401872)",37.77174,-122.401872,2
+249,Private,200 KANSAS ST,USA,California,San Francisco,Paid Parking,L,49,18,14, ,"(37.767124, -122.403817)",37.767124,-122.403817,2
+250,Private,923 Brannan St,USA,California,San Francisco,Paid Parking,L,280,150,14, ,"(37.770754, -122.405492)",37.770754,-122.405492,2
+251,Private,910 Brannan St,USA,California,San Francisco,Paid Parking,L,115,18,14, ,"(37.771168, -122.405704)",37.771168,-122.405704,2
+252,Private,2020 Alameda St,USA,California,San Francisco,Paid Parking,L,100,47,14, ,"(37.768673, -122.404955)",37.768673,-122.404955,2
+253,Private,30 Division St,USA,California,San Francisco,Paid Parking,L,60,40,16, ,"(37.768805, -122.410083)",37.768805,-122.410083,2
+254,Private,501 08th St,USA,California,San Francisco,Paid Parking,L,62,34,16, ,"(37.772501, -122.40644)",37.772501,-122.40644,2
+255,Private,1670 Owens St,USA,California,San Francisco,Paid Parking,G,500,89,16, ,"(37.76755, -122.394847)",37.76755,-122.394847,2
+256,Private,409 Illinois St,USA,California,San Francisco,Paid Parking,G,400,180,16, ,"(37.766705, -122.387222)",37.766705,-122.387222,2
+257,Private,444 DEHARO ST,USA,California,San Francisco,Permit Holder,G,67,13,16, ,"(37.764189, -122.401613)",37.764189,-122.401613,2
+258,Private,66 Potrero St,USA,California,San Francisco,Permit Holder,L,137,120,16, ,"(37.76863, -122.407905)",37.76863,-122.407905,2
+259,Private,100 Potrero Ave,USA,California,San Francisco,Permit Holder,L,100,79,16, ,"(37.767745, -122.40888)",37.767745,-122.40888,2
+260,Private,321 Florida St,USA,California,San Francisco,Permit Holder,L,60,30,16, ,"(37.764936, -122.410946)",37.764936,-122.410946,2
+261,Private,1002 Bryant St,USA,California,San Francisco,Permit Holder,L,14,9,16, ,"(37.772554, -122.40705)",37.772554,-122.40705,2
+262,Private,235 Kansas St,USA,California,San Francisco,Permit Holder,L,76,34,16, ,"(37.766793, -122.403267)",37.766793,-122.403267,2
+263,Private,590 15th St,USA,California,San Francisco,Permit Holder,L,14,10,16, ,"(37.767309, -122.406346)",37.767309,-122.406346,2
+264,Private,828 Brannan St,USA,California,San Francisco,Permit Holder,L,64,60,16, ,"(37.772573, -122.403927)",37.772573,-122.403927,2
+265,Private,2157 17th St,USA,California,San Francisco,Permit Holder,L,63,24,16, ,"(37.765023, -122.405759)",37.765023,-122.405759,2
+266,Private,Terry Francois Blvd,USA,California,San Francisco,Permit Holder,L,40,33,16, ,"(37.772948, -122.386775)",37.772948,-122.386775,2
+267,Private,1300 Bryant St,USA,California,San Francisco,Permit Holder,L,43,33,16, ,"(37.768646, -122.411169)",37.768646,-122.411169,2
+268,Private,2431 Alameda St,USA,California,San Francisco,Street Parking,L,120,117,16, ,"(37.767757, -122.409248)",37.767757,-122.409248,2
+269,Private,1504 Bryant St,USA,California,San Francisco,Customer Parking,L,41,39,16,retail,"(37.768139, -122.410956)",37.768139,-122.410956,2
+270,Private,364 09th St,USA,California,San Francisco,Customer Parking,L,40,37,16,hotel,"(37.772783, -122.410626)",37.772783,-122.410626,2
+271,Private,220 San Bruno St,USA,California,San Francisco,Customer Parking,L,70,56,16,retail,"(37.766215, -122.406036)",37.766215,-122.406036,2
+272,Private,2208 Alameda St,USA,California,San Francisco,Customer Parking,L,70,34,16,retail,"(37.768562, -122.406796)",37.768562,-122.406796,2
+273,Private,430 Irwin St,USA,California,San Francisco,Customer Parking,L,15,10,16,retail,"(37.767928, -122.398186)",37.767928,-122.398186,2
+274,Private,902 07th St,USA,California,San Francisco,Customer Parking,L,24,16,16,retail,"(37.770231, -122.399903)",37.770231,-122.399903,2
+275,Private,204 Division St,USA,California,San Francisco,Customer Parking,L,150,134,16,entertainment,"(37.769499, -122.406342)",37.769499,-122.406342,2
+276,Private,180 Pennsylvania St,USA,California,San Francisco,Customer Parking,L,60,54,16,retail,"(37.764324, -122.393832)",37.764324,-122.393832,2
+277,Private,101 Utah St,USA,California,San Francisco,Customer Parking,L,150,123,16,retail,"(37.768255, -122.406338)",37.768255,-122.406338,2
+278,Private,2103 16th St,USA,California,San Francisco,Customer Parking,L,16,11,16,restaurant,"(37.765531, -122.407626)",37.765531,-122.407626,2
+279,Private,975 BRYANT ST,USA,California,San Francisco,Customer Parking,L,50,43,16,retail,"(37.772926, -122.405845)",37.772926,-122.405845,2
+280,Private,2264 16th St,USA,California,San Francisco,Customer Parking,G,800,600,16,retail,"(37.765947, -122.409035)",37.765947,-122.409035,2
+281,Private,855 Terry A Francois Blvd,USA,California,San Francisco,Customer Parking,L,40,32,16,restaurant,"(37.764853, -122.386755)",37.764853,-122.386755,2
+282,Private,840 Brannan St,USA,California,San Francisco,Customer Parking,L,110,56,16,retail,"(37.772401, -122.404145)",37.772401,-122.404145,2
+283,Private,685 07th St,USA,California,San Francisco,Customer Parking,L,37,23,16,retail,"(37.772179, -122.401615)",37.772179,-122.401615,2
+284,Private,300 Deharo St,USA,California,San Francisco,Customer Parking,L,15,6,16,restaurant,"(37.76594, -122.401777)",37.76594,-122.401777,2
+285,Private,1590 Bryant St,USA,California,San Francisco,Customer Parking,L,32,8,16,retail,"(37.767192, -122.410769)",37.767192,-122.410769,2
+286,Private,555 09th St,USA,California,San Francisco,Customer Parking,G,378,253,16,grocery,"(37.770716, -122.407328)",37.770716,-122.407328,2
+287,Private,438 08th St,USA,California,San Francisco,Customer Parking,G,30,5,16,retail,"(37.773099, -122.407924)",37.773099,-122.407924,2
+288,Private,385 09th St,USA,California,San Francisco,Customer Parking,G,16,4,16,hotel,"(37.772847, -122.409978)",37.772847,-122.409978,2
+289,Private,2480 16th St,USA,California,San Francisco,Customer Parking,L,12,8,16,restaurant,"(37.765714, -122.410964)",37.765714,-122.410964,2
+290,Private,2428 16th St,USA,California,San Francisco,Customer Parking,L,18,3,16,restaurant,"(37.765365, -122.410673)",37.765365,-122.410673,2
+291,Private,2446 17th St,USA,California,San Francisco,Free Parking,L,40,37,16, ,"(37.765017, -122.407807)",37.765017,-122.407807,2
+292,Private,375 Berry St,USA,California,San Francisco,Paid Parking,L,210,120,16, ,"(37.772971, -122.397162)",37.772971,-122.397162,2
+293,Private,350 RHODE ISLAND ST,USA,California,San Francisco,Paid Parking,G,367,348,16, ,"(37.765354, -122.402692)",37.765354,-122.402692,2
+294,Private,650 KING ST,USA,California,San Francisco,Paid Parking,G,325,195,16, ,"(37.770589, -122.401611)",37.770589,-122.401611,2
+295,Private,635 08th St,USA,California,San Francisco,Paid Parking, ,472,399,16, ,"(37.770928, -122.404467)",37.770928,-122.404467,2
+296,Private,100 HENRY ADAMS ST,USA,California,San Francisco,Paid Parking,L,115,100,16, ,"(37.768401, -122.403931)",37.768401,-122.403931,2
+297,Private,40 RHODE ISLAND ST,USA,California,San Francisco,Paid Parking,L,70,61,16, ,"(37.769274, -122.40306)",37.769274,-122.40306,2
+298,Private,55 DIVISION ST,USA,California,San Francisco,Paid Parking,L,57,31,16, ,"(37.769548, -122.403298)",37.769548,-122.403298,2
+299,Private,450 10th St,USA,California,San Francisco,Paid Parking,G,500,300,16, ,"(37.770591, -122.411002)",37.770591,-122.411002,2
+300,Private,189 Hubbell St,USA,California,San Francisco,Paid Parking,L,500,270,16, ,"(37.76642, -122.397815)",37.76642,-122.397815,2
+301,Private,675 TOWNSEND ST,USA,California,San Francisco,Paid Parking,G,266,257,16, ,"(37.770388, -122.402847)",37.770388,-122.402847,2
+302,Private,1550 BRYANT ST,USA,California,San Francisco,Paid Parking,L,45,41,16, ,"(37.767874, -122.411236)",37.767874,-122.411236,2
+303,Private,650 TOWNSEND ST,USA,California,San Francisco,Paid Parking,G,526,311,16, ,"(37.771024, -122.402778)",37.771024,-122.402778,2
+304,Private,600 TOWNSEND ST,USA,California,San Francisco,Paid Parking,G,163,88,16, ,"(37.77174, -122.401872)",37.77174,-122.401872,2
+305,Private,200 KANSAS ST,USA,California,San Francisco,Paid Parking,L,49,48,16, ,"(37.767124, -122.403817)",37.767124,-122.403817,2
+306,Private,923 Brannan St,USA,California,San Francisco,Paid Parking,L,280,151,16, ,"(37.770754, -122.405492)",37.770754,-122.405492,2
+307,Private,910 Brannan St,USA,California,San Francisco,Paid Parking,L,115,62,16, ,"(37.771168, -122.405704)",37.771168,-122.405704,2
+308,Private,2020 Alameda St,USA,California,San Francisco,Paid Parking,L,100,59,16, ,"(37.768673, -122.404955)",37.768673,-122.404955,2
+309,Private,30 Division St,USA,California,San Francisco,Paid Parking,L,60,40,16, ,"(37.768805, -122.410083)",37.768805,-122.410083,2
+310,Private,501 08th St,USA,California,San Francisco,Paid Parking,L,62,33,16, ,"(37.772501, -122.40644)",37.772501,-122.40644,2
+311,Private,1670 Owens St,USA,California,San Francisco,Paid Parking,G,500,38,16, ,"(37.76755, -122.394847)",37.76755,-122.394847,2
+312,Private,409 Illinois St,USA,California,San Francisco,Paid Parking,G,400,336,16, ,"(37.766705, -122.387222)",37.766705,-122.387222,2
+313,Private,444 DEHARO ST,USA,California,San Francisco,Permit Holder,G,67,50,16, ,"(37.764189, -122.401613)",37.764189,-122.401613,2
+314,Private,66 Potrero St,USA,California,San Francisco,Permit Holder,L,137,80,16, ,"(37.76863, -122.407905)",37.76863,-122.407905,2
+315,Private,100 Potrero Ave,USA,California,San Francisco,Permit Holder,L,100,90,16, ,"(37.767745, -122.40888)",37.767745,-122.40888,2
+316,Private,321 Florida St,USA,California,San Francisco,Permit Holder,L,60,50,18, ,"(37.764936, -122.410946)",37.764936,-122.410946,2
+317,Private,1002 Bryant St,USA,California,San Francisco,Permit Holder,L,14,4,18, ,"(37.772554, -122.40705)",37.772554,-122.40705,2
+318,Private,235 Kansas St,USA,California,San Francisco,Permit Holder,L,76,10,18, ,"(37.766793, -122.403267)",37.766793,-122.403267,2
+319,Private,590 15th St,USA,California,San Francisco,Permit Holder,L,14,3,18, ,"(37.767309, -122.406346)",37.767309,-122.406346,2
+320,Private,828 Brannan St,USA,California,San Francisco,Permit Holder,L,64,40,18, ,"(37.772573, -122.403927)",37.772573,-122.403927,2
+321,Private,2157 17th St,USA,California,San Francisco,Permit Holder,L,63,41,18, ,"(37.765023, -122.405759)",37.765023,-122.405759,2
+322,Private,Terry Francois Blvd,USA,California,San Francisco,Permit Holder,L,40,11,18, ,"(37.772948, -122.386775)",37.772948,-122.386775,2
+323,Private,1300 Bryant St,USA,California,San Francisco,Permit Holder,L,43,23,18, ,"(37.768646, -122.411169)",37.768646,-122.411169,2
+324,Private,2431 Alameda St,USA,California,San Francisco,Street Parking,L,120,95,18, ,"(37.767757, -122.409248)",37.767757,-122.409248,2
+325,Private,1504 Bryant St,USA,California,San Francisco,Customer Parking,L,41,29,18,retail,"(37.768139, -122.410956)",37.768139,-122.410956,2
+326,Private,364 09th St,USA,California,San Francisco,Customer Parking,L,40,34,18,hotel,"(37.772783, -122.410626)",37.772783,-122.410626,2
+327,Private,220 San Bruno St,USA,California,San Francisco,Customer Parking,L,70,54,18,retail,"(37.766215, -122.406036)",37.766215,-122.406036,2
+328,Private,2208 Alameda St,USA,California,San Francisco,Customer Parking,L,70,67,18,retail,"(37.768562, -122.406796)",37.768562,-122.406796,2
+329,Private,430 Irwin St,USA,California,San Francisco,Customer Parking,L,15,3,18,retail,"(37.767928, -122.398186)",37.767928,-122.398186,2
+330,Private,902 07th St,USA,California,San Francisco,Customer Parking,L,24,21,18,retail,"(37.770231, -122.399903)",37.770231,-122.399903,2
+331,Private,204 Division St,USA,California,San Francisco,Customer Parking,L,150,98,18,entertainment,"(37.769499, -122.406342)",37.769499,-122.406342,2
+332,Private,180 Pennsylvania St,USA,California,San Francisco,Customer Parking,L,60,45,18,retail,"(37.764324, -122.393832)",37.764324,-122.393832,2
+333,Private,101 Utah St,USA,California,San Francisco,Customer Parking,L,150,112,18,retail,"(37.768255, -122.406338)",37.768255,-122.406338,2
+334,Private,2103 16th St,USA,California,San Francisco,Customer Parking,L,16,12,18,restaurant,"(37.765531, -122.407626)",37.765531,-122.407626,2
+335,Private,975 BRYANT ST,USA,California,San Francisco,Customer Parking,L,50,24,18,retail,"(37.772926, -122.405845)",37.772926,-122.405845,2
+336,Private,2264 16th St,USA,California,San Francisco,Customer Parking,G,800,574,18,retail,"(37.765947, -122.409035)",37.765947,-122.409035,2
+337,Private,855 Terry A Francois Blvd,USA,California,San Francisco,Customer Parking,L,40,32,18,restaurant,"(37.764853, -122.386755)",37.764853,-122.386755,2
+338,Private,840 Brannan St,USA,California,San Francisco,Customer Parking,L,110,98,18,retail,"(37.772401, -122.404145)",37.772401,-122.404145,2
+339,Private,685 07th St,USA,California,San Francisco,Customer Parking,L,37,24,18,retail,"(37.772179, -122.401615)",37.772179,-122.401615,2
+340,Private,300 Deharo St,USA,California,San Francisco,Customer Parking,L,15,11,18,restaurant,"(37.76594, -122.401777)",37.76594,-122.401777,2
+341,Private,1590 Bryant St,USA,California,San Francisco,Customer Parking,L,32,17,18,retail,"(37.767192, -122.410769)",37.767192,-122.410769,2
+342,Private,555 09th St,USA,California,San Francisco,Customer Parking,G,378,258,18,grocery,"(37.770716, -122.407328)",37.770716,-122.407328,2
+343,Private,438 08th St,USA,California,San Francisco,Customer Parking,G,30,22,18,retail,"(37.773099, -122.407924)",37.773099,-122.407924,2
+344,Private,385 09th St,USA,California,San Francisco,Customer Parking,G,16,3,18,hotel,"(37.772847, -122.409978)",37.772847,-122.409978,2
+345,Private,2480 16th St,USA,California,San Francisco,Customer Parking,L,12,1,18,restaurant,"(37.765714, -122.410964)",37.765714,-122.410964,2
+346,Private,2428 16th St,USA,California,San Francisco,Customer Parking,L,18,9,18,restaurant,"(37.765365, -122.410673)",37.765365,-122.410673,2
+347,Private,2446 17th St,USA,California,San Francisco,Free Parking,L,140,110,18, ,"(37.765017, -122.407807)",37.765017,-122.407807,2
+348,Private,375 Berry St,USA,California,San Francisco,Paid Parking,L,210,113,18, ,"(37.772971, -122.397162)",37.772971,-122.397162,2
+349,RPD,2500 17th St,USA,California,San Francisco,Free Parking,L,142,23,18, ,"(37.76485, -122.408397)",37.76485,-122.408397,2
+350,RPD,2500 17th St,USA,California,San Francisco,Free Parking,L,42,24,18, ,"(37.76485, -122.408397)",37.76485,-122.408397,2
+351,RPD,2500 17th St,USA,California,San Francisco,Free Parking,L,42,46,18, ,"(37.76485, -122.408397)",37.76485,-122.408397,2
+352,RPD,2500 17th St,USA,California,San Francisco,Free Parking,L,60,42,18, ,"(37.76485, -122.408397)",37.76485,-122.408397,2
+353,RPD,2500 17th St,USA,California,San Francisco,Free Parking,L,142,75,18, ,"(37.76485, -122.408397)",37.76485,-122.408397,2
+354,RPD,2500 17th St,USA,California,San Francisco,Free Parking,L,142,82,18, ,"(37.76485, -122.408397)",37.76485,-122.408397,2
+355,UCSF,1625 Owens St,USA,California,San Francisco,Paid Parking,G,516,3,18, ,"(37.768128, -122.393504)",37.768128,-122.393504,2
+356,UCSF,1650 03RD ST,USA,California,San Francisco,Paid Parking,G,720,10,18, ,"(37.768365, -122.389408)",37.768365,-122.389408,2
+357,UCSF,83 Channel St,USA,California,San Francisco,Paid Parking,L,287,24,18, ,"(37.772656, -122.393194)",37.772656,-122.393194,2
+358,UCSF,1590 Owens St,USA,California,San Francisco,Paid Parking,L,60,23,18, ,"(37.768434, -122.39583)",37.768434,-122.39583,2
+359,UCSF,1625 Owens St,USA,California,San Francisco,Paid Parking,G,516,95,18, ,"(37.768128, -122.393504)",37.768128,-122.393504,2
+360,UCSF,1650 03RD ST,USA,California,San Francisco,Paid Parking,G,720,134,18, ,"(37.768365, -122.389408)",37.768365,-122.389408,2
+361,UCSF,83 Channel St,USA,California,San Francisco,Paid Parking,L,287,170,18, ,"(37.772656, -122.393194)",37.772656,-122.393194,2
+362,UCSF,1590 Owens St,USA,California,San Francisco,Paid Parking,L,60,25,18, ,"(37.768434, -122.39583)",37.768434,-122.39583,2
+363,UCSF,1625 Owens St,USA,California,San Francisco,Paid Parking,G,516,74,18, ,"(37.768128, -122.393504)",37.768128,-122.393504,2
+364,UCSF,1650 03RD ST,USA,California,San Francisco,Paid Parking,G,720,118,18, ,"(37.768365, -122.389408)",37.768365,-122.389408,2
+365,UCSF,83 Channel St,USA,California,San Francisco,Paid Parking,L,287,187,18, ,"(37.772656, -122.393194)",37.772656,-122.393194,2
+366,UCSF,1590 Owens St,USA,California,San Francisco,Paid Parking,L,60,40,18, ,"(37.768434, -122.39583)",37.768434,-122.39583,2
+367,UCSF,1625 Owens St,USA,California,San Francisco,Paid Parking,G,516,177,18, ,"(37.768128, -122.393504)",37.768128,-122.393504,2
+368,UCSF,1650 03RD ST,USA,California,San Francisco,Paid Parking,G,720,126,18, ,"(37.768365, -122.389408)",37.768365,-122.389408,2
+369,UCSF,83 Channel St,USA,California,San Francisco,Paid Parking,L,287,210,18, ,"(37.772656, -122.393194)",37.772656,-122.393194,2
+370,UCSF,1590 Owens St,USA,California,San Francisco,Paid Parking,L,60,44,18, ,"(37.768434, -122.39583)",37.768434,-122.39583,2
+371,UCSF,1625 Owens St,USA,California,San Francisco,Paid Parking,G,516,112,18, ,"(37.768128, -122.393504)",37.768128,-122.393504,2
+372,UCSF,1650 03RD ST,USA,California,San Francisco,Paid Parking,G,720,209,18, ,"(37.768365, -122.389408)",37.768365,-122.389408,2
+373,UCSF,83 Channel St,USA,California,San Francisco,Paid Parking,L,287,120,18, ,"(37.772656, -122.393194)",37.772656,-122.393194,2
+374,UCSF,1590 Owens St,USA,California,San Francisco,Paid Parking,L,60,12,18, ,"(37.768434, -122.39583)",37.768434,-122.39583,2
+375,UCSF,1625 Owens St,USA,California,San Francisco,Paid Parking,G,516,494,18, ,"(37.768128, -122.393504)",37.768128,-122.393504,2
+376,UCSF,1650 03RD ST,USA,California,San Francisco,Paid Parking,G,720,689,18, ,"(37.768365, -122.389408)",37.768365,-122.389408,2
+377,UCSF,83 Channel St,USA,California,San Francisco,Paid Parking,L,287,255,18, ,"(37.772656, -122.393194)",37.772656,-122.393194,2
+378,UCSF,1590 Owens St,USA,California,San Francisco,Paid Parking,L,60,42,18, ,"(37.768434, -122.39583)",37.768434,-122.39583,2

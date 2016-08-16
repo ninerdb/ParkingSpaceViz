@@ -1,0 +1,180 @@
+<!doctype html>
+<meta charset="utf-8">
+ 
+<!-- load D3js -->
+<script src="http://www.d3plus.org/js/d3.js"></script>
+ 
+<!-- load D3plus after D3js -->
+<script src="http://www.d3plus.org/js/d3plus.js"></script>
+ 
+<!-- create container element for visualization -->
+<div id="viz"></div>
+ 
+<script>
+
+  // sample data array
+  var sample_data1 = [
+  {
+    "PrimeType":"Paid Parking",
+    "Hour":"8",
+    "Avg.Occupancy":11
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Hour":"10",
+    "Avg.Occupancy":81.2
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Hour":"12",
+    "Avg.Occupancy":84.8
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Hour":"14",
+    "Avg.Occupancy":114
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Hour":"16",
+    "Avg.Occupancy":100.2
+  },
+  {
+    "PrimeType":"Paid Parking",
+    "Hour":"18",
+    "Avg.Occupancy":185.8
+  },
+  {
+    "PrimeType":"Permit Holder",
+    "Hour":"8",
+    "Avg.Occupancy":15.5
+  },
+  {
+    "PrimeType":"Permit Holder",
+    "Hour":"10",
+    "Avg.Occupancy":31.5
+  },
+  {
+    "PrimeType":"Permit Holder",
+    "Hour":"12",
+    "Avg.Occupancy":44.4
+  },
+  {
+    "PrimeType":"Permit Holder",
+    "Hour":"14",
+    "Avg.Occupancy":37.9
+  },
+  {
+    "PrimeType":"Permit Holder",
+    "Hour":"16",
+    "Avg.Occupancy":40.5
+  },
+  {
+    "PrimeType":"Permit Holder",
+    "Hour":"18",
+    "Avg.Occupancy":36.6
+  },
+  {
+    "PrimeType":"Street Parking",
+    "Hour":"8",
+    "Avg.Occupancy":63.5
+  },
+  {
+    "PrimeType":"Street Parking",
+    "Hour":"10",
+    "Avg.Occupancy":63.5
+  },
+  {
+    "PrimeType":"Street Parking",
+    "Hour":"12",
+    "Avg.Occupancy":77.5
+  },
+  {
+    "PrimeType":"Street Parking",
+    "Hour":"14",
+    "Avg.Occupancy":77.5
+  },
+  {
+    "PrimeType":"Street Parking",
+    "Hour":"16",
+    "Avg.Occupancy":79
+  },
+  {
+    "PrimeType":"Street Parking",
+    "Hour":"18",
+    "Avg.Occupancy":67
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Hour":"8",
+    "Avg.Occupancy":9.9
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Hour":"10",
+    "Avg.Occupancy":40.5
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Hour":"12",
+    "Avg.Occupancy":60.6
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Hour":"14",
+    "Avg.Occupancy":67.6
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Hour":"16",
+    "Avg.Occupancy":70.7
+  },
+  {
+    "PrimeType":"Customer Parking",
+    "Hour":"18",
+    "Avg.Occupancy":70.4
+  },
+  {
+    "PrimeType":"Free Parking",
+    "Hour":"8",
+    "Avg.Occupancy":20
+  },
+  {
+    "PrimeType":"Free Parking",
+    "Hour":"10",
+    "Avg.Occupancy":29.5
+  },
+  {
+    "PrimeType":"Free Parking",
+    "Hour":"12",
+    "Avg.Occupancy":88.5
+  },
+  {
+    "PrimeType":"Free Parking",
+    "Hour":"14",
+    "Avg.Occupancy":40
+  },
+  {
+    "PrimeType":"Free Parking",
+    "Hour":"16",
+    "Avg.Occupancy":56
+  },
+  {
+    "PrimeType":"Free Parking",
+    "Hour":"18",
+    "Avg.Occupancy":96
+  }
+]
+      
+  // instantiate d3plus
+  var visualization = d3plus.viz()
+    .container("#viz")  // container DIV to hold the visualization
+    .data(sample_data1)  // data to use with the visualization
+    .type("line")       // visualization type
+    .id("PrimeType")         // key for which our data is unique on
+    .text("PrimeType")       // key to use for display text
+    .y("Avg.Occupancy")         // key to use for y-axis
+    .x("Hour")          // key to use for x-axis
+    .draw()             // finally, draw the visualization!
+
+</script>

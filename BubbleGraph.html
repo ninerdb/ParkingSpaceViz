@@ -1,0 +1,2137 @@
+<!doctype html>
+<meta charset="utf-8">
+ 
+<!-- load D3js -->
+<script src="http://www.d3plus.org/js/d3.js"></script>
+ 
+<!-- load D3plus after D3js -->
+<script src="http://www.d3plus.org/js/d3plus.js"></script>
+ 
+<!-- create container element for visualization -->
+<div id="viz"></div>
+ 
+<script>
+
+  // sample data array
+  var sample_data = [
+  {
+    "Address":"601 Terry A Francois Blvd",
+    "PrimeType":"Paid Parking",
+    "RegCap":72
+  },
+  {
+    "Address":"350 RHODE ISLAND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":367
+  },
+  {
+    "Address":"650 KING ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":325
+  },
+  {
+    "Address":"635 08th St",
+    "PrimeType":"Paid Parking",
+    "RegCap":472
+  },
+  {
+    "Address":"100 HENRY ADAMS ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":115
+  },
+  {
+    "Address":"40 RHODE ISLAND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":70
+  },
+  {
+    "Address":"55 DIVISION ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":57
+  },
+  {
+    "Address":"450 10th St",
+    "PrimeType":"Paid Parking",
+    "RegCap":500
+  },
+  {
+    "Address":"189 Hubbell St",
+    "PrimeType":"Paid Parking",
+    "RegCap":500
+  },
+  {
+    "Address":"675 TOWNSEND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":266
+  },
+  {
+    "Address":"1550 BRYANT ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":45
+  },
+  {
+    "Address":"650 TOWNSEND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":526
+  },
+  {
+    "Address":"600 TOWNSEND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":163
+  },
+  {
+    "Address":"1625 Owens St",
+    "PrimeType":"Paid Parking",
+    "RegCap":516
+  },
+  {
+    "Address":"1650 03RD ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":720
+  },
+  {
+    "Address":"83 Channel St",
+    "PrimeType":"Paid Parking",
+    "RegCap":287
+  },
+  {
+    "Address":"200 KANSAS ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":49
+  },
+  {
+    "Address":"923 Brannan St",
+    "PrimeType":"Paid Parking",
+    "RegCap":280
+  },
+  {
+    "Address":"910 Brannan St",
+    "PrimeType":"Paid Parking",
+    "RegCap":115
+  },
+  {
+    "Address":"2020 Alameda St",
+    "PrimeType":"Paid Parking",
+    "RegCap":100
+  },
+  {
+    "Address":"30 Division St",
+    "PrimeType":"Paid Parking",
+    "RegCap":60
+  },
+  {
+    "Address":"501 08th St",
+    "PrimeType":"Paid Parking",
+    "RegCap":62
+  },
+  {
+    "Address":"1590 Owens St",
+    "PrimeType":"Paid Parking",
+    "RegCap":60
+  },
+  {
+    "Address":"1670 Owens St",
+    "PrimeType":"Paid Parking",
+    "RegCap":500
+  },
+  {
+    "Address":"409 Illinois St",
+    "PrimeType":"Paid Parking",
+    "RegCap":400
+  },
+  {
+    "Address":"444 DEHARO ST",
+    "PrimeType":"Permit Holder",
+    "RegCap":67
+  },
+  {
+    "Address":"66 Potrero St",
+    "PrimeType":"Permit Holder",
+    "RegCap":137
+  },
+  {
+    "Address":"100 Potrero Ave",
+    "PrimeType":"Permit Holder",
+    "RegCap":100
+  },
+  {
+    "Address":"321 Florida St",
+    "PrimeType":"Permit Holder",
+    "RegCap":60
+  },
+  {
+    "Address":"1002 Bryant St",
+    "PrimeType":"Permit Holder",
+    "RegCap":14
+  },
+  {
+    "Address":"235 Kansas St",
+    "PrimeType":"Permit Holder",
+    "RegCap":76
+  },
+  {
+    "Address":"590 15th St",
+    "PrimeType":"Permit Holder",
+    "RegCap":14
+  },
+  {
+    "Address":"828 Brannan St",
+    "PrimeType":"Permit Holder",
+    "RegCap":64
+  },
+  {
+    "Address":"2157 17th St",
+    "PrimeType":"Permit Holder",
+    "RegCap":63
+  },
+  {
+    "Address":"Pier 50",
+    "PrimeType":"Street Parking",
+    "RegCap":45
+  },
+  {
+    "Address":"Terry Francois Blvd",
+    "PrimeType":"Permit Holder",
+    "RegCap":40
+  },
+  {
+    "Address":"1300 Bryant St",
+    "PrimeType":"Permit Holder",
+    "RegCap":43
+  },
+  {
+    "Address":"2431 Alameda St",
+    "PrimeType":"Street Parking",
+    "RegCap":120
+  },
+  {
+    "Address":"1504 Bryant St",
+    "PrimeType":"Customer Parking",
+    "RegCap":41
+  },
+  {
+    "Address":"364 09th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":40
+  },
+  {
+    "Address":"220 San Bruno St",
+    "PrimeType":"Customer Parking",
+    "RegCap":70
+  },
+  {
+    "Address":"2208 Alameda St",
+    "PrimeType":"Customer Parking",
+    "RegCap":70
+  },
+  {
+    "Address":"430 Irwin St",
+    "PrimeType":"Customer Parking",
+    "RegCap":15
+  },
+  {
+    "Address":"902 07th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":24
+  },
+  {
+    "Address":"204 Division St",
+    "PrimeType":"Customer Parking",
+    "RegCap":150
+  },
+  {
+    "Address":"180 Pennsylvania St",
+    "PrimeType":"Customer Parking",
+    "RegCap":60
+  },
+  {
+    "Address":"101 Utah St",
+    "PrimeType":"Customer Parking",
+    "RegCap":150
+  },
+  {
+    "Address":"2103 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":16
+  },
+  {
+    "Address":"975 BRYANT ST",
+    "PrimeType":"Customer Parking",
+    "RegCap":50
+  },
+  {
+    "Address":"2264 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":800
+  },
+  {
+    "Address":"855 Terry A Francois Blvd",
+    "PrimeType":"Customer Parking",
+    "RegCap":40
+  },
+  {
+    "Address":"840 Brannan St",
+    "PrimeType":"Customer Parking",
+    "RegCap":110
+  },
+  {
+    "Address":"685 07th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":37
+  },
+  {
+    "Address":"300 Deharo St",
+    "PrimeType":"Customer Parking",
+    "RegCap":15
+  },
+  {
+    "Address":"1590 Bryant St",
+    "PrimeType":"Customer Parking",
+    "RegCap":32
+  },
+  {
+    "Address":"555 09th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":378
+  },
+  {
+    "Address":"438 08th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":30
+  },
+  {
+    "Address":"385 09th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":16
+  },
+  {
+    "Address":"2480 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":12
+  },
+  {
+    "Address":"2428 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":18
+  },
+  {
+    "Address":"2500 17th St",
+    "PrimeType":"Free Parking",
+    "RegCap":142
+  },
+  {
+    "Address":"2446 17th St",
+    "PrimeType":"Free Parking",
+    "RegCap":40
+  },
+  {
+    "Address":"375 Berry St",
+    "PrimeType":"Paid Parking",
+    "RegCap":210
+  },
+  {
+    "Address":"601 Terry A Francois Blvd",
+    "PrimeType":"Paid Parking",
+    "RegCap":72
+  },
+  {
+    "Address":"350 RHODE ISLAND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":367
+  },
+  {
+    "Address":"650 KING ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":325
+  },
+  {
+    "Address":"635 08th St",
+    "PrimeType":"Paid Parking",
+    "RegCap":472
+  },
+  {
+    "Address":"100 HENRY ADAMS ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":115
+  },
+  {
+    "Address":"40 RHODE ISLAND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":70
+  },
+  {
+    "Address":"55 DIVISION ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":57
+  },
+  {
+    "Address":"450 10th St",
+    "PrimeType":"Paid Parking",
+    "RegCap":500
+  },
+  {
+    "Address":"189 Hubbell St",
+    "PrimeType":"Paid Parking",
+    "RegCap":500
+  },
+  {
+    "Address":"675 TOWNSEND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":266
+  },
+  {
+    "Address":"1550 BRYANT ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":45
+  },
+  {
+    "Address":"650 TOWNSEND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":526
+  },
+  {
+    "Address":"600 TOWNSEND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":163
+  },
+  {
+    "Address":"1625 Owens St",
+    "PrimeType":"Paid Parking",
+    "RegCap":516
+  },
+  {
+    "Address":"1650 03RD ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":720
+  },
+  {
+    "Address":"83 Channel St",
+    "PrimeType":"Paid Parking",
+    "RegCap":287
+  },
+  {
+    "Address":"200 KANSAS ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":49
+  },
+  {
+    "Address":"923 Brannan St",
+    "PrimeType":"Paid Parking",
+    "RegCap":280
+  },
+  {
+    "Address":"910 Brannan St",
+    "PrimeType":"Paid Parking",
+    "RegCap":115
+  },
+  {
+    "Address":"2020 Alameda St",
+    "PrimeType":"Paid Parking",
+    "RegCap":100
+  },
+  {
+    "Address":"30 Division St",
+    "PrimeType":"Paid Parking",
+    "RegCap":60
+  },
+  {
+    "Address":"501 08th St",
+    "PrimeType":"Paid Parking",
+    "RegCap":62
+  },
+  {
+    "Address":"1590 Owens St",
+    "PrimeType":"Paid Parking",
+    "RegCap":60
+  },
+  {
+    "Address":"1670 Owens St",
+    "PrimeType":"Paid Parking",
+    "RegCap":500
+  },
+  {
+    "Address":"409 Illinois St",
+    "PrimeType":"Paid Parking",
+    "RegCap":400
+  },
+  {
+    "Address":"444 DEHARO ST",
+    "PrimeType":"Permit Holder",
+    "RegCap":67
+  },
+  {
+    "Address":"66 Potrero St",
+    "PrimeType":"Permit Holder",
+    "RegCap":137
+  },
+  {
+    "Address":"100 Potrero Ave",
+    "PrimeType":"Permit Holder",
+    "RegCap":100
+  },
+  {
+    "Address":"321 Florida St",
+    "PrimeType":"Permit Holder",
+    "RegCap":60
+  },
+  {
+    "Address":"1002 Bryant St",
+    "PrimeType":"Permit Holder",
+    "RegCap":14
+  },
+  {
+    "Address":"235 Kansas St",
+    "PrimeType":"Permit Holder",
+    "RegCap":76
+  },
+  {
+    "Address":"590 15th St",
+    "PrimeType":"Permit Holder",
+    "RegCap":14
+  },
+  {
+    "Address":"828 Brannan St",
+    "PrimeType":"Permit Holder",
+    "RegCap":64
+  },
+  {
+    "Address":"2157 17th St",
+    "PrimeType":"Permit Holder",
+    "RegCap":63
+  },
+  {
+    "Address":"Pier 50",
+    "PrimeType":"Street Parking",
+    "RegCap":45
+  },
+  {
+    "Address":"Terry Francois Blvd",
+    "PrimeType":"Permit Holder",
+    "RegCap":40
+  },
+  {
+    "Address":"1300 Bryant St",
+    "PrimeType":"Permit Holder",
+    "RegCap":43
+  },
+  {
+    "Address":"2431 Alameda St",
+    "PrimeType":"Street Parking",
+    "RegCap":120
+  },
+  {
+    "Address":"1504 Bryant St",
+    "PrimeType":"Customer Parking",
+    "RegCap":41
+  },
+  {
+    "Address":"364 09th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":40
+  },
+  {
+    "Address":"220 San Bruno St",
+    "PrimeType":"Customer Parking",
+    "RegCap":70
+  },
+  {
+    "Address":"2208 Alameda St",
+    "PrimeType":"Customer Parking",
+    "RegCap":70
+  },
+  {
+    "Address":"430 Irwin St",
+    "PrimeType":"Customer Parking",
+    "RegCap":15
+  },
+  {
+    "Address":"902 07th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":24
+  },
+  {
+    "Address":"204 Division St",
+    "PrimeType":"Customer Parking",
+    "RegCap":150
+  },
+  {
+    "Address":"180 Pennsylvania St",
+    "PrimeType":"Customer Parking",
+    "RegCap":60
+  },
+  {
+    "Address":"101 Utah St",
+    "PrimeType":"Customer Parking",
+    "RegCap":150
+  },
+  {
+    "Address":"2103 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":16
+  },
+  {
+    "Address":"975 BRYANT ST",
+    "PrimeType":"Customer Parking",
+    "RegCap":50
+  },
+  {
+    "Address":"2264 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":800
+  },
+  {
+    "Address":"855 Terry A Francois Blvd",
+    "PrimeType":"Customer Parking",
+    "RegCap":40
+  },
+  {
+    "Address":"840 Brannan St",
+    "PrimeType":"Customer Parking",
+    "RegCap":110
+  },
+  {
+    "Address":"685 07th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":37
+  },
+  {
+    "Address":"300 Deharo St",
+    "PrimeType":"Customer Parking",
+    "RegCap":15
+  },
+  {
+    "Address":"1590 Bryant St",
+    "PrimeType":"Customer Parking",
+    "RegCap":32
+  },
+  {
+    "Address":"555 09th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":378
+  },
+  {
+    "Address":"438 08th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":30
+  },
+  {
+    "Address":"385 09th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":16
+  },
+  {
+    "Address":"2480 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":12
+  },
+  {
+    "Address":"2428 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":18
+  },
+  {
+    "Address":"2500 17th St",
+    "PrimeType":"Free Parking",
+    "RegCap":42
+  },
+  {
+    "Address":"2446 17th St",
+    "PrimeType":"Free Parking",
+    "RegCap":40
+  },
+  {
+    "Address":"375 Berry St",
+    "PrimeType":"Paid Parking",
+    "RegCap":210
+  },
+  {
+    "Address":"601 Terry A Francois Blvd",
+    "PrimeType":"Paid Parking",
+    "RegCap":72
+  },
+  {
+    "Address":"350 RHODE ISLAND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":367
+  },
+  {
+    "Address":"650 KING ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":325
+  },
+  {
+    "Address":"635 08th St",
+    "PrimeType":"Paid Parking",
+    "RegCap":472
+  },
+  {
+    "Address":"100 HENRY ADAMS ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":115
+  },
+  {
+    "Address":"40 RHODE ISLAND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":70
+  },
+  {
+    "Address":"55 DIVISION ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":57
+  },
+  {
+    "Address":"450 10th St",
+    "PrimeType":"Paid Parking",
+    "RegCap":500
+  },
+  {
+    "Address":"189 Hubbell St",
+    "PrimeType":"Paid Parking",
+    "RegCap":500
+  },
+  {
+    "Address":"675 TOWNSEND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":266
+  },
+  {
+    "Address":"1550 BRYANT ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":45
+  },
+  {
+    "Address":"650 TOWNSEND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":526
+  },
+  {
+    "Address":"600 TOWNSEND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":163
+  },
+  {
+    "Address":"1625 Owens St",
+    "PrimeType":"Paid Parking",
+    "RegCap":516
+  },
+  {
+    "Address":"1650 03RD ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":720
+  },
+  {
+    "Address":"83 Channel St",
+    "PrimeType":"Paid Parking",
+    "RegCap":287
+  },
+  {
+    "Address":"200 KANSAS ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":49
+  },
+  {
+    "Address":"923 Brannan St",
+    "PrimeType":"Paid Parking",
+    "RegCap":280
+  },
+  {
+    "Address":"910 Brannan St",
+    "PrimeType":"Paid Parking",
+    "RegCap":115
+  },
+  {
+    "Address":"2020 Alameda St",
+    "PrimeType":"Paid Parking",
+    "RegCap":100
+  },
+  {
+    "Address":"30 Division St",
+    "PrimeType":"Paid Parking",
+    "RegCap":60
+  },
+  {
+    "Address":"501 08th St",
+    "PrimeType":"Paid Parking",
+    "RegCap":62
+  },
+  {
+    "Address":"1590 Owens St",
+    "PrimeType":"Paid Parking",
+    "RegCap":60
+  },
+  {
+    "Address":"1670 Owens St",
+    "PrimeType":"Paid Parking",
+    "RegCap":500
+  },
+  {
+    "Address":"409 Illinois St",
+    "PrimeType":"Paid Parking",
+    "RegCap":400
+  },
+  {
+    "Address":"444 DEHARO ST",
+    "PrimeType":"Permit Holder",
+    "RegCap":67
+  },
+  {
+    "Address":"66 Potrero St",
+    "PrimeType":"Permit Holder",
+    "RegCap":137
+  },
+  {
+    "Address":"100 Potrero Ave",
+    "PrimeType":"Permit Holder",
+    "RegCap":100
+  },
+  {
+    "Address":"321 Florida St",
+    "PrimeType":"Permit Holder",
+    "RegCap":60
+  },
+  {
+    "Address":"1002 Bryant St",
+    "PrimeType":"Permit Holder",
+    "RegCap":14
+  },
+  {
+    "Address":"235 Kansas St",
+    "PrimeType":"Permit Holder",
+    "RegCap":76
+  },
+  {
+    "Address":"590 15th St",
+    "PrimeType":"Permit Holder",
+    "RegCap":14
+  },
+  {
+    "Address":"828 Brannan St",
+    "PrimeType":"Permit Holder",
+    "RegCap":64
+  },
+  {
+    "Address":"2157 17th St",
+    "PrimeType":"Permit Holder",
+    "RegCap":63
+  },
+  {
+    "Address":"Pier 50",
+    "PrimeType":"Street Parking",
+    "RegCap":45
+  },
+  {
+    "Address":"Terry Francois Blvd",
+    "PrimeType":"Permit Holder",
+    "RegCap":40
+  },
+  {
+    "Address":"1300 Bryant St",
+    "PrimeType":"Permit Holder",
+    "RegCap":43
+  },
+  {
+    "Address":"2431 Alameda St",
+    "PrimeType":"Street Parking",
+    "RegCap":120
+  },
+  {
+    "Address":"1504 Bryant St",
+    "PrimeType":"Customer Parking",
+    "RegCap":41
+  },
+  {
+    "Address":"364 09th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":40
+  },
+  {
+    "Address":"220 San Bruno St",
+    "PrimeType":"Customer Parking",
+    "RegCap":70
+  },
+  {
+    "Address":"2208 Alameda St",
+    "PrimeType":"Customer Parking",
+    "RegCap":70
+  },
+  {
+    "Address":"430 Irwin St",
+    "PrimeType":"Customer Parking",
+    "RegCap":15
+  },
+  {
+    "Address":"902 07th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":24
+  },
+  {
+    "Address":"204 Division St",
+    "PrimeType":"Customer Parking",
+    "RegCap":150
+  },
+  {
+    "Address":"180 Pennsylvania St",
+    "PrimeType":"Customer Parking",
+    "RegCap":60
+  },
+  {
+    "Address":"101 Utah St",
+    "PrimeType":"Customer Parking",
+    "RegCap":150
+  },
+  {
+    "Address":"2103 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":16
+  },
+  {
+    "Address":"975 BRYANT ST",
+    "PrimeType":"Customer Parking",
+    "RegCap":50
+  },
+  {
+    "Address":"2264 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":800
+  },
+  {
+    "Address":"855 Terry A Francois Blvd",
+    "PrimeType":"Customer Parking",
+    "RegCap":40
+  },
+  {
+    "Address":"840 Brannan St",
+    "PrimeType":"Customer Parking",
+    "RegCap":110
+  },
+  {
+    "Address":"685 07th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":37
+  },
+  {
+    "Address":"300 Deharo St",
+    "PrimeType":"Customer Parking",
+    "RegCap":15
+  },
+  {
+    "Address":"1590 Bryant St",
+    "PrimeType":"Customer Parking",
+    "RegCap":32
+  },
+  {
+    "Address":"555 09th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":378
+  },
+  {
+    "Address":"438 08th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":30
+  },
+  {
+    "Address":"385 09th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":16
+  },
+  {
+    "Address":"2480 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":12
+  },
+  {
+    "Address":"2428 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":18
+  },
+  {
+    "Address":"2500 17th St",
+    "PrimeType":"Free Parking",
+    "RegCap":42
+  },
+  {
+    "Address":"2446 17th St",
+    "PrimeType":"Free Parking",
+    "RegCap":240
+  },
+  {
+    "Address":"375 Berry St",
+    "PrimeType":"Paid Parking",
+    "RegCap":210
+  },
+  {
+    "Address":"601 Terry A Francois Blvd",
+    "PrimeType":"Paid Parking",
+    "RegCap":72
+  },
+  {
+    "Address":"350 RHODE ISLAND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":367
+  },
+  {
+    "Address":"650 KING ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":325
+  },
+  {
+    "Address":"635 08th St",
+    "PrimeType":"Paid Parking",
+    "RegCap":472
+  },
+  {
+    "Address":"100 HENRY ADAMS ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":115
+  },
+  {
+    "Address":"40 RHODE ISLAND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":70
+  },
+  {
+    "Address":"55 DIVISION ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":57
+  },
+  {
+    "Address":"450 10th St",
+    "PrimeType":"Paid Parking",
+    "RegCap":500
+  },
+  {
+    "Address":"189 Hubbell St",
+    "PrimeType":"Paid Parking",
+    "RegCap":500
+  },
+  {
+    "Address":"675 TOWNSEND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":266
+  },
+  {
+    "Address":"1550 BRYANT ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":45
+  },
+  {
+    "Address":"650 TOWNSEND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":526
+  },
+  {
+    "Address":"600 TOWNSEND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":163
+  },
+  {
+    "Address":"1625 Owens St",
+    "PrimeType":"Paid Parking",
+    "RegCap":516
+  },
+  {
+    "Address":"1650 03RD ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":720
+  },
+  {
+    "Address":"83 Channel St",
+    "PrimeType":"Paid Parking",
+    "RegCap":287
+  },
+  {
+    "Address":"200 KANSAS ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":49
+  },
+  {
+    "Address":"923 Brannan St",
+    "PrimeType":"Paid Parking",
+    "RegCap":280
+  },
+  {
+    "Address":"910 Brannan St",
+    "PrimeType":"Paid Parking",
+    "RegCap":115
+  },
+  {
+    "Address":"2020 Alameda St",
+    "PrimeType":"Paid Parking",
+    "RegCap":100
+  },
+  {
+    "Address":"30 Division St",
+    "PrimeType":"Paid Parking",
+    "RegCap":60
+  },
+  {
+    "Address":"501 08th St",
+    "PrimeType":"Paid Parking",
+    "RegCap":62
+  },
+  {
+    "Address":"1590 Owens St",
+    "PrimeType":"Paid Parking",
+    "RegCap":60
+  },
+  {
+    "Address":"1670 Owens St",
+    "PrimeType":"Paid Parking",
+    "RegCap":500
+  },
+  {
+    "Address":"409 Illinois St",
+    "PrimeType":"Paid Parking",
+    "RegCap":400
+  },
+  {
+    "Address":"444 DEHARO ST",
+    "PrimeType":"Permit Holder",
+    "RegCap":67
+  },
+  {
+    "Address":"66 Potrero St",
+    "PrimeType":"Permit Holder",
+    "RegCap":137
+  },
+  {
+    "Address":"100 Potrero Ave",
+    "PrimeType":"Permit Holder",
+    "RegCap":100
+  },
+  {
+    "Address":"321 Florida St",
+    "PrimeType":"Permit Holder",
+    "RegCap":60
+  },
+  {
+    "Address":"1002 Bryant St",
+    "PrimeType":"Permit Holder",
+    "RegCap":14
+  },
+  {
+    "Address":"235 Kansas St",
+    "PrimeType":"Permit Holder",
+    "RegCap":76
+  },
+  {
+    "Address":"590 15th St",
+    "PrimeType":"Permit Holder",
+    "RegCap":14
+  },
+  {
+    "Address":"828 Brannan St",
+    "PrimeType":"Permit Holder",
+    "RegCap":64
+  },
+  {
+    "Address":"2157 17th St",
+    "PrimeType":"Permit Holder",
+    "RegCap":63
+  },
+  {
+    "Address":"Pier 50",
+    "PrimeType":"Street Parking",
+    "RegCap":45
+  },
+  {
+    "Address":"Terry Francois Blvd",
+    "PrimeType":"Permit Holder",
+    "RegCap":40
+  },
+  {
+    "Address":"1300 Bryant St",
+    "PrimeType":"Permit Holder",
+    "RegCap":43
+  },
+  {
+    "Address":"2431 Alameda St",
+    "PrimeType":"Street Parking",
+    "RegCap":120
+  },
+  {
+    "Address":"1504 Bryant St",
+    "PrimeType":"Customer Parking",
+    "RegCap":41
+  },
+  {
+    "Address":"364 09th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":40
+  },
+  {
+    "Address":"220 San Bruno St",
+    "PrimeType":"Customer Parking",
+    "RegCap":70
+  },
+  {
+    "Address":"2208 Alameda St",
+    "PrimeType":"Customer Parking",
+    "RegCap":70
+  },
+  {
+    "Address":"430 Irwin St",
+    "PrimeType":"Customer Parking",
+    "RegCap":15
+  },
+  {
+    "Address":"902 07th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":24
+  },
+  {
+    "Address":"204 Division St",
+    "PrimeType":"Customer Parking",
+    "RegCap":150
+  },
+  {
+    "Address":"180 Pennsylvania St",
+    "PrimeType":"Customer Parking",
+    "RegCap":60
+  },
+  {
+    "Address":"101 Utah St",
+    "PrimeType":"Customer Parking",
+    "RegCap":150
+  },
+  {
+    "Address":"2103 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":16
+  },
+  {
+    "Address":"975 BRYANT ST",
+    "PrimeType":"Customer Parking",
+    "RegCap":50
+  },
+  {
+    "Address":"2264 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":800
+  },
+  {
+    "Address":"855 Terry A Francois Blvd",
+    "PrimeType":"Customer Parking",
+    "RegCap":40
+  },
+  {
+    "Address":"840 Brannan St",
+    "PrimeType":"Customer Parking",
+    "RegCap":110
+  },
+  {
+    "Address":"685 07th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":37
+  },
+  {
+    "Address":"300 Deharo St",
+    "PrimeType":"Customer Parking",
+    "RegCap":15
+  },
+  {
+    "Address":"1590 Bryant St",
+    "PrimeType":"Customer Parking",
+    "RegCap":32
+  },
+  {
+    "Address":"555 09th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":378
+  },
+  {
+    "Address":"438 08th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":30
+  },
+  {
+    "Address":"385 09th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":16
+  },
+  {
+    "Address":"2480 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":12
+  },
+  {
+    "Address":"2428 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":18
+  },
+  {
+    "Address":"2500 17th St",
+    "PrimeType":"Free Parking",
+    "RegCap":60
+  },
+  {
+    "Address":"2446 17th St",
+    "PrimeType":"Free Parking",
+    "RegCap":40
+  },
+  {
+    "Address":"375 Berry St",
+    "PrimeType":"Paid Parking",
+    "RegCap":210
+  },
+  {
+    "Address":"601 Terry A Francois Blvd",
+    "PrimeType":"Paid Parking",
+    "RegCap":72
+  },
+  {
+    "Address":"350 RHODE ISLAND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":367
+  },
+  {
+    "Address":"650 KING ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":325
+  },
+  {
+    "Address":"635 08th St",
+    "PrimeType":"Paid Parking",
+    "RegCap":472
+  },
+  {
+    "Address":"100 HENRY ADAMS ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":115
+  },
+  {
+    "Address":"40 RHODE ISLAND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":70
+  },
+  {
+    "Address":"55 DIVISION ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":57
+  },
+  {
+    "Address":"450 10th St",
+    "PrimeType":"Paid Parking",
+    "RegCap":500
+  },
+  {
+    "Address":"189 Hubbell St",
+    "PrimeType":"Paid Parking",
+    "RegCap":500
+  },
+  {
+    "Address":"675 TOWNSEND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":266
+  },
+  {
+    "Address":"1550 BRYANT ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":45
+  },
+  {
+    "Address":"650 TOWNSEND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":526
+  },
+  {
+    "Address":"600 TOWNSEND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":163
+  },
+  {
+    "Address":"1625 Owens St",
+    "PrimeType":"Paid Parking",
+    "RegCap":516
+  },
+  {
+    "Address":"1650 03RD ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":720
+  },
+  {
+    "Address":"83 Channel St",
+    "PrimeType":"Paid Parking",
+    "RegCap":287
+  },
+  {
+    "Address":"200 KANSAS ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":49
+  },
+  {
+    "Address":"923 Brannan St",
+    "PrimeType":"Paid Parking",
+    "RegCap":280
+  },
+  {
+    "Address":"910 Brannan St",
+    "PrimeType":"Paid Parking",
+    "RegCap":115
+  },
+  {
+    "Address":"2020 Alameda St",
+    "PrimeType":"Paid Parking",
+    "RegCap":100
+  },
+  {
+    "Address":"30 Division St",
+    "PrimeType":"Paid Parking",
+    "RegCap":60
+  },
+  {
+    "Address":"501 08th St",
+    "PrimeType":"Paid Parking",
+    "RegCap":62
+  },
+  {
+    "Address":"1590 Owens St",
+    "PrimeType":"Paid Parking",
+    "RegCap":60
+  },
+  {
+    "Address":"1670 Owens St",
+    "PrimeType":"Paid Parking",
+    "RegCap":500
+  },
+  {
+    "Address":"409 Illinois St",
+    "PrimeType":"Paid Parking",
+    "RegCap":400
+  },
+  {
+    "Address":"444 DEHARO ST",
+    "PrimeType":"Permit Holder",
+    "RegCap":67
+  },
+  {
+    "Address":"66 Potrero St",
+    "PrimeType":"Permit Holder",
+    "RegCap":137
+  },
+  {
+    "Address":"100 Potrero Ave",
+    "PrimeType":"Permit Holder",
+    "RegCap":100
+  },
+  {
+    "Address":"321 Florida St",
+    "PrimeType":"Permit Holder",
+    "RegCap":60
+  },
+  {
+    "Address":"1002 Bryant St",
+    "PrimeType":"Permit Holder",
+    "RegCap":14
+  },
+  {
+    "Address":"235 Kansas St",
+    "PrimeType":"Permit Holder",
+    "RegCap":76
+  },
+  {
+    "Address":"590 15th St",
+    "PrimeType":"Permit Holder",
+    "RegCap":14
+  },
+  {
+    "Address":"828 Brannan St",
+    "PrimeType":"Permit Holder",
+    "RegCap":64
+  },
+  {
+    "Address":"2157 17th St",
+    "PrimeType":"Permit Holder",
+    "RegCap":63
+  },
+  {
+    "Address":"Pier 50",
+    "PrimeType":"Street Parking",
+    "RegCap":45
+  },
+  {
+    "Address":"Terry Francois Blvd",
+    "PrimeType":"Permit Holder",
+    "RegCap":40
+  },
+  {
+    "Address":"1300 Bryant St",
+    "PrimeType":"Permit Holder",
+    "RegCap":43
+  },
+  {
+    "Address":"2431 Alameda St",
+    "PrimeType":"Street Parking",
+    "RegCap":120
+  },
+  {
+    "Address":"1504 Bryant St",
+    "PrimeType":"Customer Parking",
+    "RegCap":41
+  },
+  {
+    "Address":"364 09th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":40
+  },
+  {
+    "Address":"220 San Bruno St",
+    "PrimeType":"Customer Parking",
+    "RegCap":70
+  },
+  {
+    "Address":"2208 Alameda St",
+    "PrimeType":"Customer Parking",
+    "RegCap":70
+  },
+  {
+    "Address":"430 Irwin St",
+    "PrimeType":"Customer Parking",
+    "RegCap":15
+  },
+  {
+    "Address":"902 07th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":24
+  },
+  {
+    "Address":"204 Division St",
+    "PrimeType":"Customer Parking",
+    "RegCap":150
+  },
+  {
+    "Address":"180 Pennsylvania St",
+    "PrimeType":"Customer Parking",
+    "RegCap":60
+  },
+  {
+    "Address":"101 Utah St",
+    "PrimeType":"Customer Parking",
+    "RegCap":150
+  },
+  {
+    "Address":"2103 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":16
+  },
+  {
+    "Address":"975 BRYANT ST",
+    "PrimeType":"Customer Parking",
+    "RegCap":50
+  },
+  {
+    "Address":"2264 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":800
+  },
+  {
+    "Address":"855 Terry A Francois Blvd",
+    "PrimeType":"Customer Parking",
+    "RegCap":40
+  },
+  {
+    "Address":"840 Brannan St",
+    "PrimeType":"Customer Parking",
+    "RegCap":110
+  },
+  {
+    "Address":"685 07th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":37
+  },
+  {
+    "Address":"300 Deharo St",
+    "PrimeType":"Customer Parking",
+    "RegCap":15
+  },
+  {
+    "Address":"1590 Bryant St",
+    "PrimeType":"Customer Parking",
+    "RegCap":32
+  },
+  {
+    "Address":"555 09th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":378
+  },
+  {
+    "Address":"438 08th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":30
+  },
+  {
+    "Address":"385 09th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":16
+  },
+  {
+    "Address":"2480 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":12
+  },
+  {
+    "Address":"2428 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":18
+  },
+  {
+    "Address":"2500 17th St",
+    "PrimeType":"Free Parking",
+    "RegCap":142
+  },
+  {
+    "Address":"2446 17th St",
+    "PrimeType":"Free Parking",
+    "RegCap":40
+  },
+  {
+    "Address":"375 Berry St",
+    "PrimeType":"Paid Parking",
+    "RegCap":210
+  },
+  {
+    "Address":"601 Terry A Francois Blvd",
+    "PrimeType":"Paid Parking",
+    "RegCap":72
+  },
+  {
+    "Address":"350 RHODE ISLAND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":367
+  },
+  {
+    "Address":"650 KING ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":325
+  },
+  {
+    "Address":"635 08th St",
+    "PrimeType":"Paid Parking",
+    "RegCap":472
+  },
+  {
+    "Address":"100 HENRY ADAMS ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":115
+  },
+  {
+    "Address":"40 RHODE ISLAND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":70
+  },
+  {
+    "Address":"55 DIVISION ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":57
+  },
+  {
+    "Address":"450 10th St",
+    "PrimeType":"Paid Parking",
+    "RegCap":500
+  },
+  {
+    "Address":"189 Hubbell St",
+    "PrimeType":"Paid Parking",
+    "RegCap":500
+  },
+  {
+    "Address":"675 TOWNSEND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":266
+  },
+  {
+    "Address":"1550 BRYANT ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":45
+  },
+  {
+    "Address":"650 TOWNSEND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":526
+  },
+  {
+    "Address":"600 TOWNSEND ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":163
+  },
+  {
+    "Address":"1625 Owens St",
+    "PrimeType":"Paid Parking",
+    "RegCap":516
+  },
+  {
+    "Address":"1650 03RD ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":720
+  },
+  {
+    "Address":"83 Channel St",
+    "PrimeType":"Paid Parking",
+    "RegCap":287
+  },
+  {
+    "Address":"200 KANSAS ST",
+    "PrimeType":"Paid Parking",
+    "RegCap":49
+  },
+  {
+    "Address":"923 Brannan St",
+    "PrimeType":"Paid Parking",
+    "RegCap":280
+  },
+  {
+    "Address":"910 Brannan St",
+    "PrimeType":"Paid Parking",
+    "RegCap":115
+  },
+  {
+    "Address":"2020 Alameda St",
+    "PrimeType":"Paid Parking",
+    "RegCap":100
+  },
+  {
+    "Address":"30 Division St",
+    "PrimeType":"Paid Parking",
+    "RegCap":60
+  },
+  {
+    "Address":"501 08th St",
+    "PrimeType":"Paid Parking",
+    "RegCap":62
+  },
+  {
+    "Address":"1590 Owens St",
+    "PrimeType":"Paid Parking",
+    "RegCap":60
+  },
+  {
+    "Address":"1670 Owens St",
+    "PrimeType":"Paid Parking",
+    "RegCap":500
+  },
+  {
+    "Address":"409 Illinois St",
+    "PrimeType":"Paid Parking",
+    "RegCap":400
+  },
+  {
+    "Address":"444 DEHARO ST",
+    "PrimeType":"Permit Holder",
+    "RegCap":67
+  },
+  {
+    "Address":"66 Potrero St",
+    "PrimeType":"Permit Holder",
+    "RegCap":137
+  },
+  {
+    "Address":"100 Potrero Ave",
+    "PrimeType":"Permit Holder",
+    "RegCap":100
+  },
+  {
+    "Address":"321 Florida St",
+    "PrimeType":"Permit Holder",
+    "RegCap":60
+  },
+  {
+    "Address":"1002 Bryant St",
+    "PrimeType":"Permit Holder",
+    "RegCap":14
+  },
+  {
+    "Address":"235 Kansas St",
+    "PrimeType":"Permit Holder",
+    "RegCap":76
+  },
+  {
+    "Address":"590 15th St",
+    "PrimeType":"Permit Holder",
+    "RegCap":14
+  },
+  {
+    "Address":"828 Brannan St",
+    "PrimeType":"Permit Holder",
+    "RegCap":64
+  },
+  {
+    "Address":"2157 17th St",
+    "PrimeType":"Permit Holder",
+    "RegCap":63
+  },
+  {
+    "Address":"Pier 50",
+    "PrimeType":"Street Parking",
+    "RegCap":45
+  },
+  {
+    "Address":"Terry Francois Blvd",
+    "PrimeType":"Permit Holder",
+    "RegCap":40
+  },
+  {
+    "Address":"1300 Bryant St",
+    "PrimeType":"Permit Holder",
+    "RegCap":43
+  },
+  {
+    "Address":"2431 Alameda St",
+    "PrimeType":"Street Parking",
+    "RegCap":120
+  },
+  {
+    "Address":"1504 Bryant St",
+    "PrimeType":"Customer Parking",
+    "RegCap":41
+  },
+  {
+    "Address":"364 09th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":40
+  },
+  {
+    "Address":"220 San Bruno St",
+    "PrimeType":"Customer Parking",
+    "RegCap":70
+  },
+  {
+    "Address":"2208 Alameda St",
+    "PrimeType":"Customer Parking",
+    "RegCap":70
+  },
+  {
+    "Address":"430 Irwin St",
+    "PrimeType":"Customer Parking",
+    "RegCap":15
+  },
+  {
+    "Address":"902 07th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":24
+  },
+  {
+    "Address":"204 Division St",
+    "PrimeType":"Customer Parking",
+    "RegCap":150
+  },
+  {
+    "Address":"180 Pennsylvania St",
+    "PrimeType":"Customer Parking",
+    "RegCap":60
+  },
+  {
+    "Address":"101 Utah St",
+    "PrimeType":"Customer Parking",
+    "RegCap":150
+  },
+  {
+    "Address":"2103 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":16
+  },
+  {
+    "Address":"975 BRYANT ST",
+    "PrimeType":"Customer Parking",
+    "RegCap":50
+  },
+  {
+    "Address":"2264 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":800
+  },
+  {
+    "Address":"855 Terry A Francois Blvd",
+    "PrimeType":"Customer Parking",
+    "RegCap":40
+  },
+  {
+    "Address":"840 Brannan St",
+    "PrimeType":"Customer Parking",
+    "RegCap":110
+  },
+  {
+    "Address":"685 07th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":37
+  },
+  {
+    "Address":"300 Deharo St",
+    "PrimeType":"Customer Parking",
+    "RegCap":15
+  },
+  {
+    "Address":"1590 Bryant St",
+    "PrimeType":"Customer Parking",
+    "RegCap":32
+  },
+  {
+    "Address":"555 09th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":378
+  },
+  {
+    "Address":"438 08th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":30
+  },
+  {
+    "Address":"385 09th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":16
+  },
+  {
+    "Address":"2480 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":12
+  },
+  {
+    "Address":"2428 16th St",
+    "PrimeType":"Customer Parking",
+    "RegCap":18
+  },
+  {
+    "Address":"2500 17th St",
+    "PrimeType":"Free Parking",
+    "RegCap":142
+  },
+  {
+    "Address":"2446 17th St",
+    "PrimeType":"Free Parking",
+    "RegCap":140
+  },
+  {
+    "Address":"375 Berry St",
+    "PrimeType":"Paid Parking",
+    "RegCap":210
+  },
+  
+  {
+    "Address":"15 Oak Street",
+    "PrimeType":"Street Parking",
+    "RegCap":57
+  },
+  {
+    "Address":"98 Franklin Street",
+    "PrimeType":"Street Parking",
+    "RegCap":78
+  },
+  {
+    "Address":"110 Franklin Street",
+    "PrimeType":"Street Parking",
+    "RegCap":26
+  },
+  {
+    "Address":"1 Franklin Street",
+    "PrimeType":"Street Parking",
+    "RegCap":38
+  },
+  {
+    "Address":"Market Street Lot",
+    "PrimeType":"Street Parking",
+    "RegCap":83
+  },
+  {
+    "Address":"69 Polk St",
+    "PrimeType":"Street Parking",
+    "RegCap":25
+  },
+  {
+    "Address":"150 Hayes Street",
+    "PrimeType":"Street Parking",
+    "RegCap":47
+  },
+  {
+    "Address":"Van Ness Plaza",
+    "PrimeType":"Street Parking",
+    "RegCap":30
+  },
+  {
+    "Address":"1660 Mission Street",
+    "PrimeType":"Street Parking",
+    "RegCap":56
+  },
+  {
+    "Address":"1266 Market Street",
+    "PrimeType":"Street Parking",
+    "RegCap":61
+  },
+  {
+    "Address":"1231 Market Street",
+    "PrimeType":"Street Parking",
+    "RegCap":20
+  },
+  {
+    "Address":"625-645 Minna Street",
+    "PrimeType":"Street Parking",
+    "RegCap":82
+  },
+  {
+    "Address":"819 Ellis Street",
+    "PrimeType":"Street Parking",
+    "RegCap":55
+  },
+  {
+    "Address":"64 Rausch Street",
+    "PrimeType":"Street Parking",
+    "RegCap":48
+  },
+  {
+    "Address":"234 7th Street",
+    "PrimeType":"Street Parking",
+    "RegCap":61
+  },
+  {
+    "Address":"199 Turk Street",
+    "PrimeType":"Street Parking",
+    "RegCap":20
+  },
+  {
+    "Address":"Nema Building",
+    "PrimeType":"Permit Holder",
+    "RegCap":48
+  },
+  {
+    "Address":"Performing Arts Garage",
+    "PrimeType":"Permit Holder",
+    "RegCap":86
+  },
+  {
+    "Address":"Civic Center",
+    "PrimeType":"Permit Holder",
+    "RegCap":110
+  },
+  {
+    "Address":"UC Hastings College of the Law",
+    "PrimeType":"Permit Holder",
+    "RegCap":3687
+  },
+  {
+    "Address":"UCSF Mission Center",
+    "PrimeType":"Permit Holder",
+    "RegCap":149
+  },
+  {
+    "Address":"SFO St University Housing",
+    "PrimeType":"Permit Holder",
+    "RegCap":4979
+  },
+  {
+    "Address":"Opera Plaza Garage",
+    "PrimeType":"Permit Holder",
+    "RegCap":99
+  },
+  {
+    "Address":"711 Van Ness Avenue",
+    "PrimeType":"Permit Holder",
+    "RegCap":71
+  },
+  {
+    "Address":"Market Square Garage",
+    "PrimeType":"Free Parking",
+    "RegCap":3950
+  },
+  {
+    "Address":"Greatwill",
+    "PrimeType":"Free Parking",
+    "RegCap":5810
+  },
+  {
+    "Address":"SOMA Grand Garage",
+    "PrimeType":"Free Parking",
+    "RegCap":6267
+  },
+  {
+    "Address":"200 Hyde Parking",
+    "PrimeType":"Free Parking",
+    "RegCap":7058
+  },
+  {
+    "Address":"Leavenworth Street",
+    "PrimeType":"Free Parking",
+    "RegCap":1174
+  },
+  {
+    "Address":"150 Turk StSan Francisco",
+    "PrimeType":"Paid Parking",
+    "RegCap":75
+  },
+  {
+    "Address":"735 Vallejo St SFO",
+    "PrimeType":"Paid Parking",
+    "RegCap":195
+  },
+  {
+    "Address":"Mission Bartlett Garage",
+    "PrimeType":"Paid Parking",
+    "RegCap":395
+  },
+  {
+    "Address":"Glen Park Station",
+    "PrimeType":"Paid Parking",
+    "RegCap":310
+  },
+  {
+    "Address":"Priority Parking",
+    "PrimeType":"Paid Parking",
+    "RegCap":289
+  },
+  {
+    "Address":"Embarcadero Center Parking Garage",
+    "PrimeType":"Paid Parking",
+    "RegCap":248
+  },
+  {
+    "Address":"Goodwill Garage",
+    "PrimeType":"Customer Parking",
+    "RegCap":85
+  },
+  {
+    "Address":"Fox Plaza Garage",
+    "PrimeType":"Customer Parking",
+    "RegCap":115
+  },
+  {
+    "Address":"Holiday Inn Civic Center Hotel",
+    "PrimeType":"Customer Parking",
+    "RegCap":100
+  },
+  {
+    "Address":"Walgreens Tenderloin",
+    "PrimeType":"Customer Parking",
+    "RegCap":77
+  },
+  {
+    "Address":"Americania Hotel",
+    "PrimeType":"Customer Parking",
+    "RegCap":153
+  },
+  {
+    "Address":"Cova Hotel",
+    "PrimeType":"Customer Parking",
+    "RegCap":129
+  },
+  {
+    "Address":"Safeway Duboce Triangle Store",
+    "PrimeType":"Customer Parking",
+    "RegCap":80
+  },
+  {
+    "Address":"The Hamm's Building",
+    "PrimeType":"Customer Parking",
+    "RegCap":37
+  }
+
+  ]
+
+  // instantiate d3plus
+  var visualization = d3plus.viz()
+    .container("#viz")     // container DIV to hold the visualization
+    .data(sample_data)     // data to use with the visualization
+    .type("bubbles")       // visualization type
+    .id(["PrimeType", "Address"]) // nesting keys
+    .depth(1)              // 0-based depth
+    .size("RegCap")         // key name to size bubbles
+    .color("PrimeType")        // color by each group
+    .draw()                // finally, draw the visualization!
+
+</script>

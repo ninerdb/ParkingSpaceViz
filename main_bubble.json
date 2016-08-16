@@ -1,0 +1,37 @@
+{"name":"bubble", "children": [
+{"name":"California", "description":"Location",
+"children":[
+    {"name":"San Fransisco","address":"W:/UNCC/Subject/First Summer/Project/My project-Naveen Kumar/Source/bubble_intro.html", "note":"California Map"}    
+]},
+{"name":"Owners","description":"Type's of parking owners",
+"children":[
+    {"name": "Private","address":"", "note":"Private area"},
+	{"name": "UCSF","address":"http://www.ucsf.edu", "note":"University of California San Francisco Hospital"},
+    {"name": "RPD","address":"http://www.riversideca.gov/rpd/", "note":"Riverside Police Department"},
+    {"name": "Port SF","address":"http://www.sfport.com/", "note":"San Fransisco Port department"}
+]},
+{"name": "Parking", "description": "Types of parking facilities",
+"children":[
+    {"name":"Customer","address":"","note":"Customer Parking"},
+    {"name":"Free","address":"", "note":"Free parking"},
+    {"name":"Paid","address":"", "note":"Paid parking"},
+	{"name":"Permit","address":"", "note":"Permit Holder parking"},
+	{"name":"Street","address":"", "note":"Street parking"}
+]},
+{"name":"Time", "description":"Time Slots taken into consideration",
+"children":[
+    {"name":"8 AM","address":""},
+    {"name":"10 AM","address":""},
+    {"name":"12 PM","address":""},
+    {"name":"2 PM","address":""},
+	{"name":"4 PM","address":""},
+	{"name":"6 PM","address":""}	
+]},
+{"name": "Others", "description": "Other fields in the dataset",
+"children":[
+    {"name":"Latitude","address":"","note":"Latitude"},
+    {"name":"Longitude","address":"", "note":"Longitude"},
+    {"name":"Capacity","address":"", "note":"Registered capacity available in a parking area"},
+	{"name":"Occupancy","address":"", "note":"Occupancy rate at a give time in a parking lot	"}
+]}
+]}
